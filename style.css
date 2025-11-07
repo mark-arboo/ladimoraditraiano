@@ -1,0 +1,202 @@
+/* Reset di base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header {
+  background: #5799A9;
+  color: #fff;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: #cfd8dc;
+}
+
+
+/* Mobile nav con icone */
+.mobile-nav {
+  background: #1a232b;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.mobile-nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.mobile-nav li {
+  flex: 1 1 0;
+  text-align: center;
+}
+.mobile-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.3rem 0;
+  transition: color 0.2s;
+}
+.mobile-nav a:hover, .mobile-nav a:focus {
+  color: #ffb300;
+}
+.nav-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.1em;
+}
+.nav-label {
+  font-size: 0.85rem;
+}
+
+main {
+  margin: 2rem 0;
+}
+
+/* Accordion section */
+.section {
+  margin-bottom: 2.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.06);
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+}
+
+/* Nasconde le sezioni non attive */
+.hidden {
+  display: none !important;
+}
+
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.info-card {
+  flex: 1 1 220px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.04);
+  margin-bottom: 1rem;
+}
+
+.wifi-info {
+  background: #e3f2fd;
+  border-left: 5px solid #1976d2;
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+.highlight {
+  font-weight: bold;
+  color: #1976d2;
+  background: #fffde7;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+}
+
+.rules-list {
+  list-style: disc inside;
+  margin-left: 1rem;
+}
+.rules-list li {
+  margin-bottom: 0.5rem;
+}
+
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.recommendation-card {
+  background: #f1f8e9;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.04);
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+.contact-info a {
+  color: #1976d2;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #5799A9;
+  color: #fff;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 1rem;
+  margin-top: 2rem;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+  .section {
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+  }
+  .accordion-toggle {
+    padding: 1rem 0.7rem;
+    font-size: 1rem;
+  }
+  .accordion-content {
+    padding: 0 0.7rem;
+  }
+  .info-grid {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .mobile-nav .nav-label {
+    font-size: 0.7rem;
+  }
+}
+
+/* Fine CSS */
