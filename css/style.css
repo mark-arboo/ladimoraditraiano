@@ -48,6 +48,10 @@
   box-sizing: border-box;
 }
 
+.flag div {
+  background-color: var(--background-title-color);  
+}
+
 .flag img {
   width: calc(100% / 5 - 8px);  /* 20% meno padding/margin per 5 immagini */
   height: 48px;
@@ -60,7 +64,31 @@
   transform: scale(1.1);  /* effetto hover */
 }
 
+.profile-image {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover; /* mantiene proporzioni senza distorsione */
+  margin: 20px auto; /* centra l'immagine e aggiunge margine */
+}
 
+.contact-info {
+  width: 100%;
+  background-color: var(--background-title-color);  
+  font-size: var(--button-font-size);
+  margin-top: 20px;
+  height: 50px;
+  line-height: 45px;
+}
+
+.contact-info a {
+  color: var(--text-secondary-color);
+  padding-left: 20px;
+}
+
+.contact_text {
+  line-height: 1.2;
+}
 
 /* Media query per dispositivi mobili */
 @media (max-width: 768px) {
@@ -69,18 +97,6 @@
     min-height: 48px;     /* altezza minima maggiore per mobile */
     min-width: 300px;     /* larghezza minima maggiore */
     border-radius: 15px;   /* bordi più arrotondati */
-  }
-
-  .flag {
-    height: 48px;  /* Altezza ottimale per touch */
-    top: 80px;
-    padding: 0 15px;
-  }
-  
-  .flag img {
-    width: calc(100% / 5 - 10px);
-    height: 48px;  /* Target touch accessibile */
-    min-height: 48px;
   }
 
 }
@@ -96,16 +112,5 @@
     max-width: 200px;     /* larghezza massima */
   }
 
-  .flag {
-    height: 50px;  /* Ancora più grande per facilità d'uso */
-    top: 80px;
-    padding: 0 20px;
-  }
-  
-  .flag img {
-    width: calc(100% / 5 - 12px);
-    height: 50px;
-    min-height: 50px;
-  }
 
 }
