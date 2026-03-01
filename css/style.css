@@ -20,8 +20,9 @@
     position: absolute;
     bottom: 0;
     background-color: #FFF;
-    height: 30vh;  
+    height: 30vh;
     width: 100%;
+    min-height: 200px;
 }
 
 #splash-welcome p {
@@ -36,6 +37,7 @@
   min-width: 260px;
 }
 
+/* Inizio Schemata menu */
 .flag {
   width: 100%;
   height: 20px;
@@ -64,6 +66,11 @@
   transform: scale(1.1);  /* effetto hover */
 }
 
+/* Fine Schemata menu */
+
+
+
+/* Inizio Schemata contatti */
 .profile-image {
   width: 128px;
   height: 128px;
@@ -90,8 +97,25 @@
   line-height: 1.2;
 }
 
+/* Fine Schemata contatti */
+
+
+
+
+
+
 /* Media query per dispositivi mobili */
 @media (max-width: 768px) {
+  #splash-screen {
+    height: 100vh;
+    height: -webkit-fill-available; /* Fix per Safari mobile */
+    min-height: 100vh; 
+  }
+  
+  #splash-welcome {
+    height: 250px; /* Altezza fissa per mobile invece di vh */
+  }
+  
   #enter-button, #contact-button {
     padding: 14px 28px;   /* padding aumentato */
     min-height: 48px;     /* altezza minima maggiore per mobile */
@@ -99,10 +123,23 @@
     border-radius: 15px;   /* bordi più arrotondati */
   }
 
+  .contact-info {
+    font-size: 16px;
+  }
+
 }
 
 /* Media query per schermi molto piccoli */
 @media (max-width: 480px) {
+  #splash-screen {
+    height: 100vh;
+    height: -webkit-fill-available; /* Fix per Safari mobile */
+  }
+  
+  #splash-welcome {
+    height: 220px; /* Altezza ridotta per schermi piccoli */
+  }
+  
   #enter-button, #contact-button {
     padding: 16px 32px;
     min-height: 50px;
@@ -112,5 +149,7 @@
     max-width: 200px;     /* larghezza massima */
   }
 
-
+   .contact-info {
+    font-size: 16px;
+  }
 }
