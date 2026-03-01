@@ -1,0 +1,154 @@
+:root {
+  --text-primary-color: #fff;
+  --text-secondary-color: #afa68b;
+  --primary-color: #4395b3;
+  --over-color: #3a7d95;
+  --button-font-size: 20px;
+  --background-title-color: #cfddd9;  
+}
+
+#enter-button {
+  top: 20%;
+}
+
+#contact-button {
+ top: 50%;
+}
+
+
+#splash-welcome {
+    position: absolute;
+    bottom: 0;
+    background-color: #FFF;
+    height: 200px;
+    width: 100%;    
+}
+
+#splash-welcome p {
+  color: var(--text-primary-color);
+  position: absolute;
+  font-size: 60px;
+  left: 50%;
+  transform: translateX(-50%); /* centra il paragrafo orizzontalmente */
+  margin: 0;
+  padding: 20px;  
+  bottom: 30vh;
+  min-width: 260px;
+}
+
+/* Inizio Schemata menu */
+.flag {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.flag div {
+  background-color: var(--background-title-color);  
+}
+
+.flag img {
+  width: calc(100% / 5 - 8px);  /* 20% meno padding/margin per 5 immagini */
+  height: 48px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  object-fit: contain;  /* mantiene proporzioni senza distorsione */
+}
+
+.flag img:hover {
+  transform: scale(1.1);  /* effetto hover */
+}
+
+/* Fine Schemata menu */
+
+
+
+/* Inizio Schemata contatti */
+.profile-image {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover; /* mantiene proporzioni senza distorsione */
+  margin: 20px auto; /* centra l'immagine e aggiunge margine */
+}
+
+.contact-info {
+  width: 100%;
+  background-color: var(--background-title-color);  
+  font-size: var(--button-font-size);
+  margin-top: 20px;
+  height: 50px;
+  line-height: 45px;
+}
+
+.contact-info a {
+  color: var(--text-secondary-color);
+  padding-left: 20px;
+}
+
+.contact_text {
+  line-height: 1.2;
+}
+
+/* Fine Schemata contatti */
+
+
+
+
+
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+  #splash-screen {
+    height: 100vh;
+    height: -webkit-fill-available; /* Fix per Safari mobile */
+    min-height: 100vh; 
+  }
+  
+  #splash-welcome {
+    height: 200px; /* Altezza fissa per mobile invece di vh */
+  }
+  
+  #enter-button, #contact-button {
+    padding: 14px 28px;   /* padding aumentato */
+    min-height: 48px;     /* altezza minima maggiore per mobile */
+    min-width: 300px;     /* larghezza minima maggiore */
+    border-radius: 15px;   /* bordi più arrotondati */
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+}
+
+/* Media query per schermi molto piccoli */
+@media (max-width: 480px) {
+  #splash-screen {
+    height: 100vh;
+    height: -webkit-fill-available; /* Fix per Safari mobile */
+  }
+  
+  #splash-welcome {
+    height: 200px; /* Altezza ridotta per schermi piccoli */
+  }
+  
+  #enter-button, #contact-button {
+    padding: 16px 32px;
+    min-height: 50px;
+    min-width: 250px;
+    left: 50%;
+    width: 80%;           /* larghezza responsive */
+    max-width: 200px;     /* larghezza massima */
+  }
+
+   .contact-info {
+    font-size: 16px;
+  }
+}
