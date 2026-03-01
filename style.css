@@ -32,7 +32,7 @@
   transform: translateX(-50%); /* centra il paragrafo orizzontalmente */
   margin: 0;
   padding: 20px;  
-  bottom: 30vh;
+  bottom: 210px;
   min-width: 260px;
 }
 
