@@ -21,34 +21,45 @@
         <p data-key="welcome">welcome</p>
         <button id="enter-button" data-key="enter">enter</button>
         <button id="contact-button" data-key="contacts">contacts</button>
+        <button id="language-button" data-key="language">language</button>
       </div>
     </div>
 
     <div id="menu-screen" class="panel">
       <div class="banner-menu" data-key="menu">Menu</div>
-      <div class="flag">
-        <img src="./img/de.png" alt="Germany Flag" onclick="loadTranslations('de');" /> 
-        <img src="./img/en.png" alt="England Flag" onclick="loadTranslations('en');" />
-        <img src="./img/it.png" alt="Italy Flag" onclick="loadTranslations('it');" />
-        <img src="./img/es.png" alt="Spain Flag" onclick="loadTranslations('es');" />
-        <img src="./img/fr.png" alt="France Flag" onclick="loadTranslations('fr');" />
-      </div>     
       <div class="content-menu">
-        <div><i class="fa fa-home" aria-hidden="true"></i></div>
-        <div><i class="fa fa-home" aria-hidden="true"></i></div>
-        <div><i class="fa fa-home" aria-hidden="true"></i></div>
-        <div><i class="fa fa-home" aria-hidden="true"></i></div>
-        <div><i class="fa fa-home" aria-hidden="true"></i></div>
-        <div><i class="fa fa-home" aria-hidden="true"></i></div>
-        <div><i class="fa fa-home" aria-hidden="true"></i></div>
-        <div><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div class="content-menu-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div class="content-menu-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div class="content-menu-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div class="content-menu-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div class="content-menu-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div class="content-menu-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div class="content-menu-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div class="content-menu-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+        <div class="content-menu-icon"><i class="fa fa-home" aria-hidden="true"></i></div>
       </div>
-      <div class="back-menu" onclick="showSplashPanel()"><i class="fa fa-home" aria-hidden="true" ></i></div>
+      <div class="go-splash-button" onclick="showSplashPanel()"><i class="fa fa-home" aria-hidden="true" ></i></div>
     </div>
 
+    <div id="language-screen" class="panel">
+      <div class="banner-img" id="banner-language" >
+        <div class="banner-box"></div>
+        <div class="banner-title" data-key="language">Language</div>
+      </div>
+      <div class="content">
+        <div class="flag">
+          <img src="./img/de.png" alt="Germany Flag" onclick="loadTranslations('de');" /> 
+          <img src="./img/en.png" alt="England Flag" onclick="loadTranslations('en');" />
+          <img src="./img/it.png" alt="Italy Flag" onclick="loadTranslations('it');" />
+          <img src="./img/es.png" alt="Spain Flag" onclick="loadTranslations('es');" />
+          <img src="./img/fr.png" alt="France Flag" onclick="loadTranslations('fr');" />
+        </div> 
+      </div>
+      <div class="go-splash-button" onclick="showSplashPanel()"><i class="fa fa-home" aria-hidden="true" ></i></div>
+    </div>
 
     <div id="contacts-screen" class="panel">
-      <div class="banner-img" >
+      <div class="banner-img" id="banner-contacts">
         <div class="banner-box"></div>
         <div class="banner-title" data-key="contacts">Contacts</div>
       </div>
@@ -65,7 +76,7 @@
           <a href="mailto:ladimoraditraiano@gmail.com"><i class="fa fa-envelope" aria-hidden="true"> EMAIL: ladimoraditraiano@gmail.com</i></a>
         </div>
       </div>
-      <div class="back-menu" onclick="showSplashPanel()"><i class="fa fa-home" aria-hidden="true"></i></div>
+      <div class="go-splash-button" onclick="showSplashPanel()"><i class="fa fa-home" aria-hidden="true"></i></div>
     </div>
 
   </body>
