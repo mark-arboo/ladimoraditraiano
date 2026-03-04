@@ -8,21 +8,23 @@
 }
 
 #enter-button {
-  top: 20%;
+  top: 10%;
 }
 
 #contact-button {
- top: 50%;
+ top: 40%;
 }
 
+#language-button {
+  top: 70%;
+}
 
 #splash-welcome {
     position: absolute;
     bottom: 0;
     background-color: #FFF;
-    height: 30vh;
-    width: 100%;
-    min-height: 200px;
+    height: 200px;
+    width: 100%;    
 }
 
 #splash-welcome p {
@@ -33,37 +35,37 @@
   transform: translateX(-50%); /* centra il paragrafo orizzontalmente */
   margin: 0;
   padding: 20px;  
-  bottom: 30vh;
+  bottom: 210px;
   min-width: 260px;
 }
 
-/* Inizio Schemata menu */
+/* Inizio Schemata language */
 .flag {
-  width: 100%;
-  height: 20px;
-  position: absolute;
-  top: 100px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 0 10px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 2vh; /* spazio tra le bandiere proporzionale all'altezza viewport */
+  padding: 2vh 2vw;
   box-sizing: border-box;
 }
 
-.flag div {
-  background-color: var(--background-title-color);  
-}
-
 .flag img {
-  width: calc(100% / 5 - 8px);  /* 20% meno padding/margin per 5 immagini */
-  height: 48px;
+  width: min(12vw, 8vh); /* dimensione che si adatta sia alla larghezza che altezza */
+  height: auto; /* mantiene proporzioni originali dell'immagine */
+  aspect-ratio: 3/2; /* proporzioni tipiche delle bandiere */
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  transition: transform 0.2s ease;
-  object-fit: contain;  /* mantiene proporzioni senza distorsione */
 }
 
 .flag img:hover {
-  transform: scale(1.1);  /* effetto hover */
+  transform: scale(1.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Fine Schemata menu */
@@ -113,7 +115,7 @@
   }
   
   #splash-welcome {
-    height: 250px; /* Altezza fissa per mobile invece di vh */
+    height: 200px; /* Altezza fissa per mobile invece di vh */
   }
   
   #enter-button, #contact-button {
@@ -137,7 +139,7 @@
   }
   
   #splash-welcome {
-    height: 220px; /* Altezza ridotta per schermi piccoli */
+    height: 200px; /* Altezza ridotta per schermi piccoli */
   }
   
   #enter-button, #contact-button {
