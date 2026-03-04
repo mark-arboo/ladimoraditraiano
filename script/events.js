@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
         showContactsPanel();
     });
 
- 
-   showSplashPanel();   
+    document.getElementById('language-button').addEventListener('click', function() {
+        showLanguagePanel();
+    });
+
+    // Inizializza l'app controllando se è primo caricamento o refresh
+    initializeApp();
 });
