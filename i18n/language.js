@@ -1,10 +1,8 @@
 let translations = {};
 
 document.addEventListener('DOMContentLoaded', function() {
-    
     const savedLang = localStorage.getItem('lang') || 'en';
     loadTranslations(savedLang);
-
 });
 
 
@@ -32,11 +30,19 @@ async function loadTranslations(savedLang) {
 
 function translate(lang) {
     localStorage.setItem('lang', lang);
+    
+    // Lista delle chiavi che contengono HTML e devono essere renderizzate
+    const htmlKeys = ['welcome_text', 'contact_text'];
+    
     document.querySelectorAll('[data-key]').forEach(elem => {
         const key = elem.getAttribute('data-key');
-        // Correzione: translations contiene direttamente le traduzioni, non nested per lingua
         if (translations[key]) {
-            elem.innerText = translations[key];
+            // Usa innerHTML per le chiavi che contengono HTML, innerText per le altre
+            if (htmlKeys.includes(key)) {
+                elem.innerHTML = translations[key];
+            } else {
+                elem.innerText = translations[key];
+            }
         }
     });
 }
