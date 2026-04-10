@@ -17,5 +17,7 @@
     "checkout": "<h3>Check-out</h3><h1>08:00 - 10:00</h1> Se desideri effettuare il check-out più tardi, contattaci e faremo del nostro meglio per accontentarti, a seconda del nostro programma.",
     "checkout_list": "Prima di partire:<ul><li><i class=\"fa fa-check\" aria-hidden=\"true\"></i> Assicurati di lasciare la casa in buone condizioni, come l'hai trovata.</li><li><i class=\"fa fa-check\" aria-hidden=\"true\"></i> Le chiavi dell'appartamento devono essere riconsegnate all'host di persona al momento del check-out, salvo accordi differenti.</li><li><i class=\"fa fa-check\" aria-hidden=\"true\"></i> Rimuovi tutti i tuoi effetti personali.</li><li><i class=\"fa fa-check\" aria-hidden=\"true\"></i> Spegni tutte le luci e gli elettrodomestici (condizionatori, forno, micro-onde).</li><li><i class=\"fa fa-check\" aria-hidden=\"true\"></i> Chiudi tutte le finestre e le porte.</li></ul>"   ,
     "emergency": "Emergenza",
-    "emergency_text": "<h3>Carabinieri</h3><h1>112</h1><h3>Polizia di Stato</h3><h1>113</h1><h3>Vigili del fuoco</h3><h1>115</h1><h3>Emergenza sanitaria</h3><h1>118</h1><h3>Guardia Medica di Terracina</h3><h1>0773 520888</h1>"
+    "emergency_text": "<h3>Carabinieri</h3><h1>112</h1><h3>Polizia di Stato</h3><h1>113</h1><h3>Vigili del fuoco</h3><h1>115</h1><h3>Emergenza sanitaria</h3><h1>118</h1><h3>Guardia Medica di Terracina</h3><h1>0773 520888</h1>",
+    "location": "Posizione",
+    "location_text": "<h3>Via Traiano 19, 04019 Terracina</h3>"
 }   
