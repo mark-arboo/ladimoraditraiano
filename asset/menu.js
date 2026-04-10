@@ -23,7 +23,7 @@ let menuInfo = [
     "icon": "fa-cutlery",
     "text_key": "restaurant",
     "link": "showRestaurantPanel()"
-},
+}
 
 /*
 {
