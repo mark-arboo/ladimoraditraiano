@@ -130,6 +130,7 @@ button > i {
   box-sizing: border-box;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 10%;
 }
 
 .content-menu {
@@ -289,10 +290,11 @@ button > i {
   margin-top: 20px;
   height: 50px;
   line-height: 45px;
+  text-align: center; 
 }
 
 .contact-info a {
-  color: var(--text-secondary-color);
+  color: #000;
   padding-left: 20px;
 }
 
@@ -300,13 +302,14 @@ button > i {
   line-height: 1.2;
 }
 
-.welcome_text {
+.text {
+  font-size: 16px;
   line-height: 1.5;
   text-align: justify;
   padding: 15px 0;
 }
 
-.welcome_text h3 {
+.content h3 {
   color: var(--primary-color);
   font-size: 24px;
   margin-bottom: 15px;
@@ -314,7 +317,14 @@ button > i {
   font-weight: bold;
 }
 
-.welcome_text br {
+.content h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content br {
   margin-bottom: 10px;
 }
 
