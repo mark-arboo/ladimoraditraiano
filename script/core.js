@@ -1,6 +1,3 @@
-let menuInfo = [];  
-
-
 /**
  * Controlla se è la prima volta che l'applicazione viene caricata
  * o se è un refresh di pagina
@@ -74,6 +71,18 @@ function onPageRefresh() {
                 break;
             case 'welcome':
                 showWelcomePanel();
+                break;  
+            case 'checkin_out':
+                showCheckinOutPanel();
+                break;
+            case 'wifi':
+                showWifiPanel();
+                break;      
+            case 'house_rules':
+                showHouseRulesPanel();
+                break;
+            case 'restaurant':
+                showRestaurantPanel();
                 break;    
             default:
                 showSplashPanel();
@@ -81,6 +90,32 @@ function onPageRefresh() {
     } else {
         showSplashPanel();
     }
+}
+
+
+function showRestaurantPanel() {
+    hideAllPanels(); 
+    document.getElementById('restaurant-screen').style.display = 'block';
+    sessionStorage.setItem('lastActivePanel', 'restaurant');
+}
+
+function showHouseRulesPanel() {
+    hideAllPanels();
+    document.getElementById('house-rules-screen').style.display = 'block';
+    sessionStorage.setItem('lastActivePanel', 'house_rules');
+}
+
+
+function showWifiPanel() {
+    hideAllPanels();
+    document.getElementById('wifi-screen').style.display = 'block';
+    sessionStorage.setItem('lastActivePanel', 'wifi');
+}
+
+function showCheckinOutPanel() {
+    hideAllPanels();
+    document.getElementById('checkin-out-screen').style.display = 'block';
+    sessionStorage.setItem('lastActivePanel', 'checkin_out');
 }
 
 function showWelcomePanel() {
@@ -98,31 +133,22 @@ function showSplashPanel() {
 function showMenuPanel() {
     // carica il menu leggendo il json contenuto nel file /json/menu.json e memorizzandolo nella variabile globale
     hideAllPanels();
-    if (menuInfo.length === 0) {
-        fetch('/json/menu.json')
-            .then(response => response.json())
-            .then(data => {
-                menuInfo = data;
-                // scorre l'array menuInfo e crea l'html da aggiungere nel div con id content-menu
-                const contentMenu = document.getElementById('content-menu');
-                contentMenu.innerHTML = ""; // pulisce il contenuto precedente";
-                menuInfo.forEach(item => {
-                    const menuItem = document.createElement('div');
-                    menuItem.className = 'content-menu-icon';
-                    menuItem.innerHTML = `
-                        <div class="icon-container" onclick="${item.link}">
-                        <i class="fa ${item.icon}" aria-hidden="true"></i>
-                        </div>
-                        <div class="icon-text" data-key="${item.text_key}">${item.text_key}</div>
-                    `;
-                    contentMenu.appendChild(menuItem);
-                });
-
-            })
-            .catch(error => {
-                console.error('Errore nel caricamento del menu:', error);
-            });
-    }
+   
+    // scorre l'array menuInfo e crea l'html da aggiungere nel div con id content-menu
+    const contentMenu = document.getElementById('content-menu');
+    contentMenu.innerHTML = ""; // pulisce il contenuto precedente";
+    menuInfo.forEach(item => {
+        const menuItem = document.createElement('div');
+        menuItem.className = 'content-menu-icon';
+        menuItem.innerHTML = `
+            <div class="icon-container" onclick="${item.link}">
+            <i class="fa ${item.icon}" aria-hidden="true"></i>
+            </div>
+            <div class="icon-text" data-key="${item.text_key}">${item.text_key.toUpperCase()}</div>
+        `;
+        contentMenu.appendChild(menuItem);
+    });
+            
     document.getElementById('menu-screen').style.display = 'block';
     sessionStorage.setItem('lastActivePanel', 'menu');
 }
