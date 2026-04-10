@@ -86,7 +86,10 @@ function onPageRefresh() {
                 break;    
             case 'emergency':
                 showEmergencyPanel();
-                break;        
+                break;  
+            case 'location':
+                showLocationPanel();
+                break;            
             default:
                 showSplashPanel();
         }
@@ -95,21 +98,35 @@ function onPageRefresh() {
     }
 }
 
+function showLocationPanel() {
+    hideAllPanels();
+    document.getElementById('location-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
+    sessionStorage.setItem('lastActivePanel', 'location');
+}
+
 function showEmergencyPanel() {
     hideAllPanels();
     document.getElementById('emergency-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'emergency');
 }
 
 function showRestaurantPanel() {
     hideAllPanels(); 
     document.getElementById('restaurant-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'restaurant');
 }
 
 function showHouseRulesPanel() {
     hideAllPanels();
     document.getElementById('house-rules-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'house_rules');
 }
 
@@ -117,24 +134,32 @@ function showHouseRulesPanel() {
 function showWifiPanel() {
     hideAllPanels();
     document.getElementById('wifi-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'wifi');
 }
 
 function showCheckinOutPanel() {
     hideAllPanels();
     document.getElementById('checkin-out-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'checkin_out');
 }
 
 function showWelcomePanel() {
     hideAllPanels();
     document.getElementById('welcome-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'welcome');
 }
 
 function showSplashPanel() {
     hideAllPanels();
     document.getElementById('splash-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'none'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'splash');
 }
 
@@ -158,18 +183,25 @@ function showMenuPanel() {
     });
             
     document.getElementById('menu-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'block'; // Mostra il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'menu');
 }
 
 function showContactsPanel() {
     hideAllPanels();
     document.getElementById('contacts-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'block'; // Mostra il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'contacts');
 }
 
 function showLanguagePanel() {
     hideAllPanels();
     document.getElementById('language-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'block'; // Mostra il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu
+    
     sessionStorage.setItem('lastActivePanel', 'language');
 }
 
@@ -178,4 +210,5 @@ function hideAllPanels() {
         panel.style.display = 'none';
     });
 }   
+
 
