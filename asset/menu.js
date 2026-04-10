@@ -10,6 +10,11 @@ let menuInfo = [
     "link": "showCheckinOutPanel()"
 },
 {
+    "icon": "fa fa-map-marker",
+    "text_key": "location",
+    "link": "showLocationPanel()"
+},
+{
     "icon": "fa-wifi",
     "text_key": "wifi",
     "link": "showWifiPanel()"
