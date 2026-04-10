@@ -32,7 +32,7 @@ function translate(lang) {
     localStorage.setItem('lang', lang);
     
     // Lista delle chiavi che contengono HTML e devono essere renderizzate
-    const htmlKeys = ['contact_text', 'welcome_text', 'checkin', 'checkout','house_rules_list', 'checkout_list', 'wifi_text'];
+    const htmlKeys = ['contact_text', 'welcome_text', 'checkin', 'checkout','house_rules_list', 'checkout_list', 'wifi_text', 'emergency_text'];
     
     document.querySelectorAll('[data-key]').forEach(elem => {
         const key = elem.getAttribute('data-key');
