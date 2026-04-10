@@ -84,6 +84,9 @@ function onPageRefresh() {
             case 'restaurant':
                 showRestaurantPanel();
                 break;    
+            case 'emergency':
+                showEmergencyPanel();
+                break;        
             default:
                 showSplashPanel();
         }
@@ -92,6 +95,11 @@ function onPageRefresh() {
     }
 }
 
+function showEmergencyPanel() {
+    hideAllPanels();
+    document.getElementById('emergency-screen').style.display = 'block';
+    sessionStorage.setItem('lastActivePanel', 'emergency');
+}
 
 function showRestaurantPanel() {
     hideAllPanels(); 
