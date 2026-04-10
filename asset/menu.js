@@ -23,7 +23,12 @@ let menuInfo = [
     "icon": "fa-cutlery",
     "text_key": "restaurant",
     "link": "showRestaurantPanel()"
-}
+},
+{
+    "icon": "fa fa-ambulance",
+    "text_key": "emergency",
+    "link": "showEmergencyPanel()"
+},
 
 /*
 {
