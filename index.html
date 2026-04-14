@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La dimora di Traiano - Welcome App</title>
+    <!-- Collegamento al Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Icona per iOS (Safari non legge bene il manifest per l'icona home) -->
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- Colore della barra di stato su mobile -->
+    <meta name="theme-color" content="#000000">
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,8 +47,9 @@
       <div class="content">
         <p data-key="location_text" class="text">location_text</p>
         <div class="contact-info">
-          <h1><a href="https://www.google.com/maps/place/Via+Traiano,+19,+04019+Terracina+LT/@41.3164412,13.2986448,17z/data=!3m1!4b1!4m5!3m4!1s0x132c9b8e7c9d9f5:0x1e7c9d9f5c9d9f5!8m2!3d41.3164412!4d13.3008335" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"> Google Maps</i></a></h1>
+          <h1><a href="https://www.google.com/maps/place/Via+Traiano,+19,+04019+Terracina+LT/@41.3164412,13.2986448,17z/data=!3m1!4b1!4m5!3m4!1s0x132c9b8e7c9d9f5:0x1e7c9d9f5c9d9f5!8m2!3d41.3164412!4d13.3008335" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"> Go to maps</i></a></h1>
         </div>
+        <img src="./img/map.png" alt="maps Image" >
       </div>
     </div>
 
