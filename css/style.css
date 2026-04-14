@@ -299,6 +299,8 @@ button > i {
   padding-left: 20px;
 }
 
+
+
 .contact_text {
   line-height: 1.2;
 }
@@ -335,6 +337,15 @@ button > i {
 
 .content ul li i {
   font-size: 24px;
+}
+
+.content img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Fine Schemata contatti */
