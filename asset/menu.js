@@ -34,7 +34,11 @@ let menuInfo = [
     "text_key": "emergency",
     "link": "showEmergencyPanel()"
 },
-
+{
+    "icon": "fa fa-comments-o",
+    "text_key": "reviews",
+    "link": "showReviewPanel()"
+}
 /*
 {
     "icon": "fa-bed",

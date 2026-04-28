@@ -89,6 +89,9 @@ function onPageRefresh() {
                 break;  
             case 'location':
                 showLocationPanel();
+                break;    
+            case 'review':
+                showReviewPanel();
                 break;            
             default:
                 showSplashPanel();
@@ -96,6 +99,14 @@ function onPageRefresh() {
     } else {
         showSplashPanel();
     }
+}
+
+function showReviewPanel() {
+    hideAllPanels();
+    document.getElementById('review-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none';
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
+    sessionStorage.setItem('lastActivePanel', 'review');
 }
 
 function showLocationPanel() {
