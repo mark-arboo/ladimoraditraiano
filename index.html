@@ -71,7 +71,31 @@
         <div class="banner-title" data-key="emergency">emergency</div>
       </div>
       <div class="content">
-         <p data-key="emergency_text" class="text">emergency_text</p>
+        <div class="emergency-info">
+          <p data-key="carabinieri">carabinieri</p>
+          <p class="emergency-number">112</p>
+          <a href="tel:112"><i class="fa fa-phone" aria-hidden="true"></i></a>  
+        </div>
+        <div class="emergency-info">
+          <p data-key="polizia_di_stato">polizia_di_stato</p>
+          <p class="emergency-number">113</p>
+          <a href="tel:113"><i class="fa fa-phone" aria-hidden="true"></i></a>  
+        </div>
+        <div class="emergency-info">
+          <p data-key="vigili_del_fuoco">vigili_del_fuoco</p>
+          <p class="emergency-number">115</p>
+          <a href="tel:115"><i class="fa fa-phone" aria-hidden="true"></i></a>  
+        </div>
+        <div class="emergency-info">
+          <p data-key="emergenza_sanitaria">emergenza_sanitaria</p>
+          <p class="emergency-number">118</p>
+          <a href="tel:118"><i class="fa fa-phone" aria-hidden="true"></i></a>  
+        </div>
+        <div class="emergency-info">
+          <p data-key="guardia_medica_di_terracina">guardia_medica_di_terracina</p>
+          <p class="emergency-number">116</p>
+          <a href="tel:116"><i class="fa fa-phone" aria-hidden="true"></i></a>  
+        </div>
       </div>
     </div>
 
@@ -132,11 +156,62 @@
       <div class="banner-menu" data-key="menu">Menu</div>
       <div class="content-menu" id="content-menu">
         <div class="content-menu-icon">
-          <div class="icon-container">
+          <div class="icon-container" onclick="showWelcomePanel()" >
             <i class="fa fa-home" aria-hidden="true"></i>
           </div>
           <div class="icon-text" data-key="home">Home</div>
         </div>
+        
+        <div class="content-menu-icon">
+          <div class="icon-container" onclick="showCheckinOutPanel()" >
+            <i class="fa fa-key" aria-hidden="true"></i>
+          </div>
+          <div class="icon-text" data-key="checkin_out">CHECKIN_OUT</div>
+        </div>
+
+        <div class="content-menu-icon">
+          <div class="icon-container" onclick="showLocationPanel()" >
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </div>
+          <div class="icon-text" data-key="location">LOCATION</div>
+        </div>
+
+        <div class="content-menu-icon">
+          <div class="icon-container" onclick="showWifiPanel()" >
+            <i class="fa fa-wifi" aria-hidden="true"></i>
+          </div>
+          <div class="icon-text" data-key="wifi">WIFI</div>
+        </div>
+
+        <div class="content-menu-icon">
+          <div class="icon-container" onclick="showHouseRulesPanel()" >
+            <i class="fa fa-list-ol" aria-hidden="true"></i>
+          </div>
+          <div class="icon-text" data-key="house_rules">HOUSE_RULES</div>
+        </div>
+
+        <div class="content-menu-icon">
+          <div class="icon-container" onclick="showRestaurantPanel()" >
+            <i class="fa fa-cutlery" aria-hidden="true"></i>
+          </div>
+          <div class="icon-text" data-key="restaurant">RESTAURANT</div>
+        </div>
+
+        <div class="content-menu-icon">
+          <div class="icon-container" onclick="showEmergencyPanel()" >
+            <i class="fa fa-ambulance" aria-hidden="true"></i>
+          </div>
+          <div class="icon-text" data-key="emergency">EMERGENCY</div>
+        </div>
+
+        <div class="content-menu-icon">
+          <div class="icon-container" onclick="showReviewPanel()" >
+            <i class="fa fa-comments-o" aria-hidden="true"></i>
+          </div>
+          <div class="icon-text" data-key="reviews">REVIEWS</div>
+        </div>
+
+
       </div>
     </div>
 

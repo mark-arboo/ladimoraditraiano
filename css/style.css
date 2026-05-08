@@ -201,9 +201,9 @@ button > i {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 48px;
+    height: 50px;
     text-align: center;
-    line-height: 48px; 
+    line-height: 50px; 
     font-size: var(--icon-font-size);
     background-color: var(--primary-color);
     color: var(--text-primary-color);
@@ -289,7 +289,7 @@ button > i {
   background-color: var(--background-title-color);  
   font-size: var(--button-font-size);
   margin-top: 20px;
-  height: 50px;
+  min-height: 50px;
   line-height: 45px;
   text-align: center; 
 }
@@ -351,8 +351,50 @@ button > i {
 /* Fine Schemata contatti */
 
 
+.emergency-info {
+  position: relative;
+  width: 100%;
+  border: 3px solid var(--primary-color);
+  font-size: var(--button-font-size);
+  margin-top: 20px;
+  min-height: 50px;
+  line-height: 45px;
+  text-align: left; 
+  padding: 5px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
+.emergency-info p:first-child {
+  color: var(--text-secondary-color);
+  margin: 0;
+}
 
+.emergency-number {
+  font-size: var(--icon-font-size); 
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.emergency-info i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFF;
+  background-color: var(--primary-color);
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  /* Opzionale: aggiungi background per evidenziare il box quadrato */
+  /* background-color: rgba(67, 149, 179, 0.1); */
+}
 
 
 /* Media query per dispositivi mobili */

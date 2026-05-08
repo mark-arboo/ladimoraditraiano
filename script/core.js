@@ -177,22 +177,6 @@ function showSplashPanel() {
 function showMenuPanel() {
     // carica il menu leggendo il json contenuto nel file /json/menu.json e memorizzandolo nella variabile globale
     hideAllPanels();
-   
-    // scorre l'array menuInfo e crea l'html da aggiungere nel div con id content-menu
-    const contentMenu = document.getElementById('content-menu');
-    contentMenu.innerHTML = ""; // pulisce il contenuto precedente";
-    menuInfo.forEach(item => {
-        const menuItem = document.createElement('div');
-        menuItem.className = 'content-menu-icon';
-        menuItem.innerHTML = `
-            <div class="icon-container" onclick="${item.link}">
-            <i class="fa ${item.icon}" aria-hidden="true"></i>
-            </div>
-            <div class="icon-text" data-key="${item.text_key}">${item.text_key.toUpperCase()}</div>
-        `;
-        contentMenu.appendChild(menuItem);
-    });
-            
     document.getElementById('menu-screen').style.display = 'block';
     document.getElementById('go-splash-button').style.display = 'block'; // Mostra il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu
