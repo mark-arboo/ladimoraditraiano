@@ -92,7 +92,11 @@ function onPageRefresh() {
                 break;    
             case 'review':
                 showReviewPanel();
-                break;            
+                break;    
+            case 'recycling':
+                showRecyclingPanel();
+                break;     
+                
             default:
                 showSplashPanel();
         }
@@ -100,6 +104,15 @@ function onPageRefresh() {
         showSplashPanel();
     }
 }
+
+
+function showRecyclingPanel() {
+    hideAllPanels();
+    document.getElementById('recycling-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
+    sessionStorage.setItem('lastActivePanel', 'recycling');
+}   
 
 function showReviewPanel() {
     hideAllPanels();
@@ -199,6 +212,8 @@ function showLanguagePanel() {
     
     sessionStorage.setItem('lastActivePanel', 'language');
 }
+
+
 
 function hideAllPanels() {
     document.querySelectorAll('.panel').forEach(panel => {
