@@ -39,7 +39,7 @@ button > i {
   line-height: 20px;
   list-style: none;
   padding: 12px 24px;  /* padding aumentato per touch target */
-  min-height: 44px;    /* dimensione minima per touch accessibile */
+  min-height: 50px;    /* dimensione minima per touch accessibile */
   min-width: 300px;    /* larghezza minima */
   user-select: none;
   -webkit-user-select: none;
@@ -233,7 +233,7 @@ button > i {
     position: absolute;
     bottom: 0;
     background-color: #FFF;
-    height: 200px;
+    height: 300px;
     width: 100%;    
 }
 
@@ -245,7 +245,7 @@ button > i {
   transform: translateX(-50%); /* centra il paragrafo orizzontalmente */
   margin: 0;
   padding: 20px;  
-  bottom: 210px;
+  bottom: 310px;
   min-width: 260px;
 }
 
@@ -653,10 +653,6 @@ button > i {
     min-height: 100vh; 
   }
   
-  #splash-welcome {
-    height: 200px; /* Altezza fissa per mobile invece di vh */
-  }
-  
   #enter-button, #contact-button {
     padding: 14px 28px;   /* padding aumentato */
     min-height: 48px;     /* altezza minima maggiore per mobile */
@@ -676,11 +672,7 @@ button > i {
     height: 100vh;
     height: -webkit-fill-available; /* Fix per Safari mobile */
   }
-  
-  #splash-welcome {
-    height: 200px; /* Altezza ridotta per schermi piccoli */
-  }
-  
+    
   #enter-button, #contact-button {
     padding: 16px 32px;
     min-height: 50px;
@@ -753,10 +745,12 @@ button > i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
   gap: 15px;
 }
 
+.restaurant-header-new h3 {
+  text-align: left;
+}
 .restaurant-name {
   color: #1a73e8;
   font-size: 24px;
