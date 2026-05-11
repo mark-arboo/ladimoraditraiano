@@ -25,14 +25,103 @@
     <script src="./script/core.js"></script>
 
 
-    <!-- recycling -->
+    <!-- RECYCLING -->
     <div id="recycling-screen" class="panel">
       <div class="banner-img" id="banner-recycling" >
         <div class="banner-box"></div>
         <div class="banner-title" data-key="recycling">recycling</div>
       </div>
       <div class="content">
-        RECYCLING
+        <p data-key="recycling_text" class="text">Calendario settimanale della raccolta differenziata</p>
+        
+        <div class="recycling-calendar">
+          <div class="recycling-day organic-day">
+            <div class="day-header">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <span data-key="monday">Lunedì</span>
+            </div>
+            <div class="waste-icon">
+              <i class="fa fa-trash" aria-hidden="true"></i>
+            </div>
+            <div class="waste-type" data-key="organic">Organico</div>
+          </div>
+
+          <div class="recycling-day unsorted-day">
+            <div class="day-header">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <span data-key="tuesday">Martedì</span>
+            </div>
+            <div class="waste-icon">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </div>
+            <div class="waste-type" data-key="unsorted">Indifferenziato</div>
+          </div>
+
+          <div class="recycling-day multi-waste-day">
+            <div class="day-header">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <span data-key="wednesday">Mercoledì</span>
+            </div>
+            <div class="waste-items-container">
+              <div class="waste-item">
+                <div class="waste-icon organic-icon">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+                <div class="waste-type" data-key="organic">Organico</div>
+              </div>
+              <div class="waste-item">
+                <div class="waste-icon glass-icon">
+                  <i class="fa fa-glass" aria-hidden="true"></i>
+                </div>
+                <div class="waste-type" data-key="glass">Vetro</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="recycling-day plastic-day">
+            <div class="day-header">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <span data-key="thursday">Giovedì</span>
+            </div>
+            <div class="waste-icon">
+              <i class="fa fa-recycle" aria-hidden="true"></i>
+            </div>
+            <div class="waste-type" data-key="plastic">Plastica e Lattine</div>
+          </div>
+
+          <div class="recycling-day paper-day">
+            <div class="day-header">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <span data-key="friday">Venerdì</span>
+            </div>
+            <div class="waste-icon">
+              <i class="fa fa-file-text" aria-hidden="true"></i>
+            </div>
+            <div class="waste-type" data-key="paper">Carta e Cartone</div>
+          </div>
+
+          <div class="recycling-day organic-day">
+            <div class="day-header">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <span data-key="saturday">Sabato</span>
+            </div>
+            <div class="waste-icon">
+              <i class="fa fa-trash" aria-hidden="true"></i>
+            </div>
+            <div class="waste-type" data-key="organic">Organico</div>
+          </div>
+
+          <div class="recycling-day plastic-day">
+            <div class="day-header">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <span data-key="sunday">Domenica</span>
+            </div>
+            <div class="waste-icon">
+              <i class="fa fa-recycle" aria-hidden="true"></i>
+            </div>
+            <div class="waste-type" data-key="plastic">Plastica e Lattine</div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -115,9 +204,7 @@
         <div class="banner-title" data-key="house_rules">house_rules</div>
       </div>
       <div class="content">
-        <h3>Caro ospite, benvenuto/a!</h3>
-        <p>Per un soggiorno piacevole, ti preghiamo di osservare le seguenti regole:</p>
-        <br />
+        <p data-key="house_rules_title"></p>
         
         <div class="house-rules-list">
           <div class="house-rule-item">
@@ -125,7 +212,7 @@
               <i class="fa fa-ban" aria-hidden="true"></i>
             </div>
             <div class="house-rule-text" data-key="rule_no_pets">
-              Non sono ammessi animali in casa.
+              xxx
             </div>
           </div>
 
@@ -134,7 +221,7 @@
               <i class="fa fa-users" aria-hidden="true"></i>
             </div>
             <div class="house-rule-text" data-key="rule_no_parties">
-              Non è permesso organizzare feste/eventi.
+              xxx
             </div>
           </div>
 
@@ -143,7 +230,7 @@
               <i class="fa fa-volume-off" aria-hidden="true"></i>
             </div>
             <div class="house-rule-text" data-key="rule_quiet_hours">
-              Orari di silenzio dalle 2:00 PM alle 4:00 PM e dalle 11:00 PM alle 07:00 AM.
+              xxx
             </div>
           </div>
 
@@ -152,7 +239,7 @@
               <i class="fa fa-leaf" aria-hidden="true"></i>
             </div>
             <div class="house-rule-text" data-key="rule_respect_environment">
-              Sii rispettoso dell'ambiente e lascialo come vorresti trovarlo.
+              xxx
             </div>
           </div>
 
@@ -161,7 +248,7 @@
               <i class="fa fa-ban" aria-hidden="true"></i>
             </div>
             <div class="house-rule-text" data-key="rule_no_smoking">
-              Non è consentito fumare sigarette tradizionali ed elettroniche in casa.
+              xxx
             </div>
           </div>
 
@@ -170,7 +257,7 @@
               <i class="fa fa-info-circle" aria-hidden="true"></i>
             </div>
             <div class="house-rule-text" data-key="rule_additional_guests">
-              Per motivi di sicurezza e comfort, ti chiediamo di informarci sulla presenza di ospiti aggiuntivi. La capacità massima dell'alloggio deve essere rispettata.
+              xxx
             </div>
           </div>
 
@@ -179,7 +266,7 @@
               <i class="fa fa-recycle" aria-hidden="true"></i>
             </div>
             <div class="house-rule-text" data-key="rule_waste_sorting">
-              Per la tutela dell'ambiente, ti preghiamo di differenziare i rifiuti utilizzando gli appositi contenitori posti in cucina.
+             xxx
             </div>
           </div>
 
@@ -188,7 +275,7 @@
               <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
             </div>
             <div class="house-rule-text" data-key="rule_energy_saving">
-              Contribuisci alla sostenibilità spegnendo luci e tutti gli apparecchi elettronici quando non sei a casa. Inoltre, ricordati di spegnere l'aria condizionata prima di uscire.
+             xxx
             </div>
           </div>
 
@@ -197,7 +284,7 @@
               <i class="fa fa-clock-o" aria-hidden="true"></i>
             </div>
             <div class="house-rule-text" data-key="rule_checkout_time">
-              Check-out entro le ore 10:00 AM.
+              xxx
             </div>
           </div>
         </div>
@@ -230,7 +317,55 @@
       <div class="content">
           <p data-key="checkin" class="text">checkin</p>
           <p data-key="checkout" class="text">checkout</p>
-          <p data-key="checkout_list" class="text">checkout_list</p>         
+          
+          <p data-key="checkout_title_list" class="text">checkout_title_list</p>
+          <div class="house-rules-list">
+            <div class="house-rule-item">
+              <div class="house-rule-icon">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </div>
+              <div class="house-rule-text" data-key="checkout_list_item_1" >
+                xxx
+              </div>
+            </div>
+
+            <div class="house-rule-item">
+              <div class="house-rule-icon">
+                <i class="fa fa-key" aria-hidden="true"></i>
+              </div>
+              <div class="house-rule-text" data-key="checkout_list_item_2">
+                xxx 
+              </div>
+            </div>
+
+            <div class="house-rule-item">
+              <div class="house-rule-icon">
+                <i class="fa fa-suitcase" aria-hidden="true"></i>
+              </div>
+              <div class="house-rule-text" data-key="checkout_list_item_3">
+                xxx 
+              </div>
+            </div>
+
+            <div class="house-rule-item">
+              <div class="house-rule-icon">
+                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+              </div>
+              <div class="house-rule-text" data-key="checkout_list_item_4">
+                xxx 
+              </div>
+            </div>
+
+            <div class="house-rule-item">
+              <div class="house-rule-icon">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="house-rule-text" data-key="checkout_list_item_5">
+                xxx 
+              </div>
+            </div>
+          </div>
+          
       </div>
     </div>
 

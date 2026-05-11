@@ -124,7 +124,7 @@ button > i {
 
 .content {
   position: absolute;
-  top: 35vh;
+  top: 30vh;
   width: 100%;
   background-color: var(--text-primary-color); /* colore di sfondo per il contenuto */
   box-sizing: border-box;
@@ -447,6 +447,208 @@ button > i {
   border-radius: 40px;
 }
 
+/* Inizio Schemata Recycling Calendar */
+.recycling-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.recycling-day {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 6px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.recycling-day:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.day-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.day-header i {
+  font-size: 22px;
+}
+
+.waste-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #FFF;
+}
+
+.waste-icon i {
+  font-size: 40px;
+}
+
+.waste-type {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Stile per giorni con raccolta multipla */
+.multi-waste-day {
+  border-left-color: #9C27B0;
+  background: linear-gradient(135deg, #ffffff 0%, #f3e5f5 100%);
+}
+
+.waste-items-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.waste-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icone specifiche per tipo di rifiuto */
+.organic-icon {
+  background: #8B4513 !important;
+}
+
+.glass-icon {
+  background: #4CAF50 !important;
+}
+
+.paper-icon {
+  background: #2196F3 !important;
+}
+
+.plastic-icon {
+  background: #FFC107 !important;
+}
+
+.unsorted-icon {
+  background: #757575 !important;
+}
+
+/* Colori specifici per ogni tipo di rifiuto  */
+.organic-day {
+  border-left-color: #8B4513;
+  background: linear-gradient(135deg, #ffffff 0%, #f5ebe0 100%);
+}
+
+.organic-day .waste-icon {
+  background: #8B4513;
+}
+
+.organic-day .waste-icon i {
+  color: #ffffff;
+}
+
+.paper-day {
+  border-left-color: #2196F3;
+  background: linear-gradient(135deg, #ffffff 0%, #e3f2fd 100%);
+}
+
+.paper-day .waste-icon {
+  background: #2196F3;
+}
+
+.paper-day .waste-icon i {
+  color: #ffffff;
+}
+
+.plastic-day {
+  border-left-color: #FFC107;
+  background: linear-gradient(135deg, #ffffff 0%, #fff9e6 100%);
+}
+
+.plastic-day .waste-icon {
+  background: #FFC107;
+}
+
+.plastic-day .waste-icon i {
+  color: #ffffff;
+}
+
+.glass-day {
+  border-left-color: #4CAF50;
+  background: linear-gradient(135deg, #ffffff 0%, #e8f5e9 100%);
+}
+
+.glass-day .waste-icon {
+  background: #4CAF50;
+}
+
+.glass-day .waste-icon i {
+  color: #ffffff;
+}
+
+.unsorted-day {
+  border-left-color: #757575;
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+}
+
+.unsorted-day .waste-icon {
+  background: #757575;
+}
+
+.unsorted-day .waste-icon i {
+  color: #ffffff;
+}
+
+.no-collection-day {
+  border-left-color: #e0e0e0;
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  opacity: 0.7;
+}
+
+.no-collection-day .waste-icon {
+  background: #e0e0e0;
+}
+
+.no-collection-day .waste-icon i {
+  color: #999999;
+}
+
+.no-collection-day .waste-type {
+  color: #999999;
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Media query per dispositivi mobili */
 @media (max-width: 768px) {
@@ -493,7 +695,26 @@ button > i {
     max-width: 200px;     /* larghezza massima */
   }
 
-   .contact-info {
+  .contact-info {
     font-size: 16px;
   }
 }
+
+
+
+/* Media query per tablet e schermi grandi */
+@media (min-width: 768px) {
+  .recycling-calendar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .recycling-calendar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Fine Schemata Recycling Calendar */
+
