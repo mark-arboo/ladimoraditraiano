@@ -39,5 +39,11 @@
     "plastic": "Plastic & Cans",
     "glass": "Glass",
     "unsorted": "General Waste",
-    "no_collection": "No Collection"
+    "no_collection": "No Collection",
+    "transport": "Transport",
+    "restaurant_intro": "Discover the best restaurants nearby. Click to see on Google Maps.",
+    "open": "OPEN",
+    "closed": "CLOSED",
+    "view_on_maps": "View on Maps",
+    "call": "Call"
 }

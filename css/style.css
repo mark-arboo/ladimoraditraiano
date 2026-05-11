@@ -97,6 +97,10 @@ button > i {
     background-image: url('../img/language.png');
 }
 
+#banner-restaurant {
+    background-image: url('../img/restaurant.png');
+}
+
 
 .banner-box {
   position: absolute;
@@ -357,7 +361,6 @@ button > i {
 /* Inizio Schemata House Rules */
 .house-rules-list {
   width: 100%;
-  margin-top: 20px;
 }
 
 .house-rule-item {
@@ -708,5 +711,149 @@ button > i {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* Fine Schemata Recycling Calendar */
+
+/* Inizio Schemata Restaurant */
+.restaurant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.restaurant-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f0f0f0;
+}
+
+.restaurant-content {
+  padding: 18px;
+}
+
+.restaurant-header-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.restaurant-name {
+  color: #1a73e8;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+  line-height: 1.3;
+}
+
+.restaurant-map-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--text-primary-color);
+  text-decoration: none;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-map-link:hover {
+  background-color: var(--over-color);
+  transform: scale(1.05);
+}
+
+.restaurant-map-link i {
+  font-size: 22px;
+}
+
+.restaurant-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.restaurant-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #5f6368;
+  line-height: 1.4;
+}
+
+.restaurant-detail i {
+  width: 20px;
+  font-size: 16px;
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.restaurant-detail a {
+  color: #1a73e8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.restaurant-detail a:hover {
+  color: var(--over-color);
+  text-decoration: underline;
+}
+
+/* Media query per schermi tablet e desktop */
+@media (min-width: 768px) {
+  .restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .restaurant-image {
+    height: 220px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .restaurant-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .restaurant-image {
+    height: 240px;
+  }
+  
+  .restaurant-content {
+    padding: 22px;
+  }
+  
+  .restaurant-name {
+    font-size: 26px;
+  }
+}
+
+/* Fine Schemata Restaurant */
+
 

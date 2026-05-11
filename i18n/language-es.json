@@ -39,5 +39,11 @@
     "plastic": "Plástico y Latas",
     "glass": "Vidrio",
     "unsorted": "Indiferenciado",
-    "no_collection": "Sin recogida"
+    "no_collection": "Sin recogida",
+    "transport": "Transporte",
+    "restaurant_intro": "Descubre los mejores restaurantes cercanos. Haz clic para ver en Google Maps.",
+    "open": "ABIERTO",
+    "closed": "CERRADO",
+    "view_on_maps": "Ver en Maps",
+    "call": "Llamar"
 }

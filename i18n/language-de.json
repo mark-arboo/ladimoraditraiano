@@ -39,5 +39,11 @@
     "plastic": "Plastik & Dosen",
     "glass": "Glas",
     "unsorted": "Restmüll",
-    "no_collection": "Keine Abholung"
+    "no_collection": "Keine Abholung",
+    "transport": "Transport",
+    "restaurant_intro": "Entdecken Sie die besten Restaurants in der Nähe. Klicken Sie, um auf Google Maps anzuzeigen.",
+    "open": "GEÖFFNET",
+    "closed": "GESCHLOSSEN",
+    "view_on_maps": "Auf Maps anzeigen",
+    "call": "Anrufen"
 }

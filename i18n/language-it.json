@@ -54,5 +54,6 @@
     "glass": "Vetro",
     "unsorted": "Indifferenziato",
     "no_collection": "Nessuna raccolta",
-    "transport": "Trasporti"
+    "transport": "Trasporti",
+    "view_on_maps": "Mappa"
 }   

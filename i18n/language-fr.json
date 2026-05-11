@@ -39,5 +39,11 @@
     "plastic": "Plastique et Canettes",
     "glass": "Verre",
     "unsorted": "Non trié",
-    "no_collection": "Pas de collecte"
+    "no_collection": "Pas de collecte",
+    "transport": "Transport",
+    "restaurant_intro": "Découvrez les meilleurs restaurants à proximité. Cliquez pour voir sur Google Maps.",
+    "open": "OUVERT",
+    "closed": "FERMÉ",
+    "view_on_maps": "Voir sur Maps",
+    "call": "Appeler"
 }
