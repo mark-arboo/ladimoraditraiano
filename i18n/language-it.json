@@ -53,5 +53,6 @@
     "plastic": "Plastica e Lattine",
     "glass": "Vetro",
     "unsorted": "Indifferenziato",
-    "no_collection": "Nessuna raccolta"
+    "no_collection": "Nessuna raccolta",
+    "transport": "Trasporti"
 }   

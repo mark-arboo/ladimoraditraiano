@@ -25,6 +25,20 @@
     <script src="./script/core.js"></script>
 
 
+    <!-- TRANSPORT -->
+    <div id="transport-screen" class="panel">
+      <div class="banner-img" id="banner-transport" >
+        <div class="banner-box"></div>
+        <div class="banner-title" data-key="transport">transport</div>
+      </div>
+      <div class="content">
+        TRANSPORT
+      </div>
+    </div>  
+
+
+
+
     <!-- RECYCLING -->
     <div id="recycling-screen" class="panel">
       <div class="banner-img" id="banner-recycling" >
@@ -406,6 +420,13 @@
         </div>
 
         <div class="content-menu-icon">
+          <div class="icon-container" onclick="showTransportPanel()" >
+            <i class="fa fa-subway" aria-hidden="true"></i>
+          </div>
+          <div class="icon-text" data-key="transport">TRANSPORT</div>
+        </div>
+
+        <div class="content-menu-icon">
           <div class="icon-container" onclick="showWifiPanel()" >
             <i class="fa fa-wifi" aria-hidden="true"></i>
           </div>
@@ -432,6 +453,10 @@
           </div>
           <div class="icon-text" data-key="restaurant">RESTAURANT</div>
         </div>
+       
+
+
+
 
         <div class="content-menu-icon">
           <div class="icon-container" onclick="showEmergencyPanel()" >

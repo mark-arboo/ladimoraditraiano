@@ -96,13 +96,24 @@ function onPageRefresh() {
             case 'recycling':
                 showRecyclingPanel();
                 break;     
-                
+            case 'transport':
+                showTransportPanel();
+                break;     
             default:
                 showSplashPanel();
         }
     } else {
         showSplashPanel();
     }
+}
+
+
+function showTransportPanel() {
+    hideAllPanels();
+    document.getElementById('transport-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none';
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
+    sessionStorage.setItem('lastActivePanel', 'transport');
 }
 
 
