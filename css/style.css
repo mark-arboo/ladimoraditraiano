@@ -237,7 +237,7 @@ button > i {
     position: absolute;
     bottom: 0;
     background-color: #FFF;
-    height: 300px;
+    height: 250px;
     width: 100%;    
 }
 
@@ -249,7 +249,7 @@ button > i {
   transform: translateX(-50%); /* centra il paragrafo orizzontalmente */
   margin: 0;
   padding: 20px;  
-  bottom: 310px;
+  bottom: 260px;
   min-width: 260px;
 }
 
