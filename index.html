@@ -20,6 +20,7 @@
   </head>
   <body>
     <script src="./asset/menu.js"></script>  
+    <script src="./asset/house_rules.js"></script>  
 	  <script src="./script/events.js"></script>
     <script src="./i18n/language.js"></script>
     <script src="./script/core.js"></script>
@@ -508,91 +509,10 @@ Consiglio vivamente questa casa a chiunque voglia trascorrere una vacanza rilass
         <div class="banner-title" data-key="house_rules">house_rules</div>
       </div>
       <div class="content">
-        <p data-key="house_rules_title"></p>
-        
-        <div class="house-rules-list">
-          <div class="house-rule-item">
-            <div class="house-rule-icon">
-              <i class="fa fa-ban" aria-hidden="true"></i>
-            </div>
-            <div class="house-rule-text" data-key="rule_no_pets">
-              xxx
-            </div>
-          </div>
-
-          <div class="house-rule-item">
-            <div class="house-rule-icon">
-              <i class="fa fa-users" aria-hidden="true"></i>
-            </div>
-            <div class="house-rule-text" data-key="rule_no_parties">
-              xxx
-            </div>
-          </div>
-
-          <div class="house-rule-item">
-            <div class="house-rule-icon">
-              <i class="fa fa-volume-off" aria-hidden="true"></i>
-            </div>
-            <div class="house-rule-text" data-key="rule_quiet_hours">
-              xxx
-            </div>
-          </div>
-
-          <div class="house-rule-item">
-            <div class="house-rule-icon">
-              <i class="fa fa-leaf" aria-hidden="true"></i>
-            </div>
-            <div class="house-rule-text" data-key="rule_respect_environment">
-              xxx
-            </div>
-          </div>
-
-          <div class="house-rule-item">
-            <div class="house-rule-icon">
-              <i class="fa fa-ban" aria-hidden="true"></i>
-            </div>
-            <div class="house-rule-text" data-key="rule_no_smoking">
-              xxx
-            </div>
-          </div>
-
-          <div class="house-rule-item">
-            <div class="house-rule-icon">
-              <i class="fa fa-info-circle" aria-hidden="true"></i>
-            </div>
-            <div class="house-rule-text" data-key="rule_additional_guests">
-              xxx
-            </div>
-          </div>
-
-          <div class="house-rule-item">
-            <div class="house-rule-icon">
-              <i class="fa fa-recycle" aria-hidden="true"></i>
-            </div>
-            <div class="house-rule-text" data-key="rule_waste_sorting">
-             xxx
-            </div>
-          </div>
-
-          <div class="house-rule-item">
-            <div class="house-rule-icon">
-              <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-            </div>
-            <div class="house-rule-text" data-key="rule_energy_saving">
-             xxx
-            </div>
-          </div>
-
-          <div class="house-rule-item">
-            <div class="house-rule-icon">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
-            </div>
-            <div class="house-rule-text" data-key="rule_checkout_time">
-              xxx
-            </div>
-          </div>
+        <p data-key="house_rules_title"></p>        
+        <div class="house-rules-list" id="house-rules-list">
+            LISTA REGOLE CASA...
         </div>
-
       </div>
     </div>
 
@@ -688,81 +608,7 @@ Consiglio vivamente questa casa a chiunque voglia trascorrere una vacanza rilass
     <div id="menu-screen" class="panel">
       <div class="banner-menu" data-key="menu">Menu</div>
       <div class="content-menu" id="content-menu">
-        <div class="content-menu-icon">
-          <div class="icon-container" onclick="showWelcomePanel()" >
-            <i class="fa fa-home" aria-hidden="true"></i>
-          </div>
-          <div class="icon-text" data-key="home">Home</div>
-        </div>
-        
-        <div class="content-menu-icon">
-          <div class="icon-container" onclick="showCheckinOutPanel()" >
-            <i class="fa fa-key" aria-hidden="true"></i>
-          </div>
-          <div class="icon-text" data-key="checkin_out">CHECKIN_OUT</div>
-        </div>
-
-        <div class="content-menu-icon">
-          <div class="icon-container" onclick="showLocationPanel()" >
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-          </div>
-          <div class="icon-text" data-key="location">LOCATION</div>
-        </div>
-
-        <div class="content-menu-icon">
-          <div class="icon-container" onclick="showTransportPanel()" >
-            <i class="fa fa-subway" aria-hidden="true"></i>
-          </div>
-          <div class="icon-text" data-key="transport">TRANSPORT</div>
-        </div>
-
-        <div class="content-menu-icon">
-          <div class="icon-container" onclick="showWifiPanel()" >
-            <i class="fa fa-wifi" aria-hidden="true"></i>
-          </div>
-          <div class="icon-text" data-key="wifi">WIFI</div>
-        </div>
-
-        <div class="content-menu-icon">
-          <div class="icon-container" onclick="showHouseRulesPanel()" >
-            <i class="fa fa-list-ol" aria-hidden="true"></i>
-          </div>
-          <div class="icon-text" data-key="house_rules">HOUSE_RULES</div>
-        </div>
-
-        <div class="content-menu-icon">
-          <div class="icon-container" onclick="showRecyclingPanel()" >
-            <i class="fa fa-recycle" aria-hidden="true"></i>
-          </div>
-          <div class="icon-text" data-key="recycling">RECYCLING</div>
-        </div>
-
-        <div class="content-menu-icon">
-          <div class="icon-container" onclick="showRestaurantPanel()" >
-            <i class="fa fa-cutlery" aria-hidden="true"></i>
-          </div>
-          <div class="icon-text" data-key="restaurant">RESTAURANT</div>
-        </div>
-       
-
-
-
-
-        <div class="content-menu-icon">
-          <div class="icon-container" onclick="showEmergencyPanel()" >
-            <i class="fa fa-ambulance" aria-hidden="true"></i>
-          </div>
-          <div class="icon-text" data-key="emergency">EMERGENCY</div>
-        </div>
-
-        <div class="content-menu-icon">
-          <div class="icon-container" onclick="showReviewPanel()" >
-            <i class="fa fa-comments-o" aria-hidden="true"></i>
-          </div>
-          <div class="icon-text" data-key="reviews">REVIEWS</div>
-        </div>
-
-
+          MENU...
       </div>
     </div>
 

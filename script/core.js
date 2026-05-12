@@ -1,3 +1,8 @@
+let menuLoaded = false;
+let houseRulesLoaded = false;
+
+
+
 /**
  * Controlla se è la prima volta che l'applicazione viene caricata
  * o se è un refresh di pagina
@@ -159,6 +164,27 @@ function showRestaurantPanel() {
 
 function showHouseRulesPanel() {
     hideAllPanels();
+
+    // legge il file json delle house rules e monta dinamicamente il pannello
+    if (!houseRulesLoaded) {
+        console.log('Caricamento house rules dal JSON');
+        const houseRulesContainer = document.getElementById('house-rules-list');
+        houseRulesContainer.innerHTML = ''; // Pulisce il contenuto prima di aggiungere gli elementi
+        house_rules.forEach(rule => {
+            houseRulesContainer.innerHTML = houseRulesContainer.innerHTML +  `
+            <div class="house-rule-item">
+                <div class="house-rule-icon">
+                    <i class="${rule.icon}" aria-hidden="true"></i>
+                </div>
+                <div class="house-rule-text" data-key="${rule['data-key']}">
+                    ${rule['data-key'].toUpperCase()}
+                </div>
+          </div>          
+            `;
+        });
+        houseRulesLoaded = true;
+    }   
+
     document.getElementById('house-rules-screen').style.display = 'block';
     document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
@@ -194,13 +220,32 @@ function showSplashPanel() {
     hideAllPanels();
     document.getElementById('splash-screen').style.display = 'block';
     document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
-    document.getElementById('go-menu-button').style.display = 'none'; // Mostra il pulsante per tornare al menu   
+    document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'splash');
 }
 
 function showMenuPanel() {
-    // carica il menu leggendo il json contenuto nel file /json/menu.json e memorizzandolo nella variabile globale
+    // carica il menu leggendo il json contenuto nel file /asset/menu.js
     hideAllPanels();
+
+    // Monta il pannello del menu dinamicamente usando il JSON
+    if (!menuLoaded) {
+        console.log('Caricamento menu dal JSON');
+        const menuContainer = document.getElementById('content-menu');
+        menuContainer.innerHTML = ''; // Pulisce il contenuto prima di aggiungere gli elementi
+        menuObj.forEach(item => {
+            menuContainer.innerHTML = menuContainer.innerHTML +  `
+            <div class="content-menu-icon">
+                <div class="icon-container" onclick="${item.function}" >
+                    <i class="${item.icon}" aria-hidden="true"></i>
+                </div>
+                <div class="icon-text" data-key="${item['data-key']}">${item['data-key'].toUpperCase()}</div>
+            </div>            
+            `;
+        });
+        menuLoaded = true;
+    }
+
     document.getElementById('menu-screen').style.display = 'block';
     document.getElementById('go-splash-button').style.display = 'block'; // Mostra il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu
