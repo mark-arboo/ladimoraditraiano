@@ -20,21 +20,21 @@ async function loadTranslations(savedLang) {
         translations = await response.json();
                 
         // 4. Applica immediatamente le traduzioni agli elementi esistenti
-        translate(savedLang);
+        translate(savedLang, document);
        
     } catch (error) {
         console.error("Errore nel caricamento del JSON:", error);
-        translate(savedLang);
+        translate(savedLang, document);
     }
 }
 
-function translate(lang) {
+function translate(lang, domElement) {
     localStorage.setItem('lang', lang);
     
     // Lista delle chiavi che contengono HTML e devono essere renderizzate
     //const htmlKeys = ['contact_text', 'welcome_text', 'checkin', 'checkout','house_rules_list', 'checkout_list', 'wifi_text', 'emergency_text', 'location_text'];
     
-    document.querySelectorAll('[data-key]').forEach(elem => {
+    domElement.querySelectorAll('[data-key]').forEach(elem => {
         const key = elem.getAttribute('data-key');
         if (translations[key]) {
             // Usa innerHTML per le chiavi che contengono HTML, innerText per le altre

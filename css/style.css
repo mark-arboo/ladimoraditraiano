@@ -252,36 +252,7 @@ button > i {
   min-width: 260px;
 }
 
-/* Inizio Schemata language */
-.flag {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  gap: 2vh; /* spazio tra le bandiere proporzionale all'altezza viewport */
-  padding: 2vh 2vw;
-  box-sizing: border-box;
-}
 
-.flag img {
-  width: min(20vw, 10vh); /* dimensione che si adatta sia alla larghezza che altezza */
-  height: auto; /* mantiene proporzioni originali dell'immagine */
-  aspect-ratio: 3/2; /* proporzioni tipiche delle bandiere */
-  object-fit: cover;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.flag img:hover {
-  transform: scale(1.15);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Fine Schemata language */
 
 
 
@@ -993,3 +964,149 @@ button > i {
 /* Fine Schemata Reviews */
 
 
+/* Inizio Schemata language */
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.language-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid #e0e0e0;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.language-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(67, 149, 179, 0.25);
+  border-color: var(--primary-color);
+}
+
+.language-card:active {
+  transform: translateY(-1px);
+}
+
+.language-flag-container {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--over-color));
+  padding: 3px;
+  box-shadow: 0 3px 10px rgba(67, 149, 179, 0.3);
+  transition: all 0.3s ease;
+}
+
+.language-card:hover .language-flag-container {
+  transform: scale(1.08);
+  box-shadow: 0 4px 14px rgba(67, 149, 179, 0.4);
+}
+
+.language-flag-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  padding: 8px;
+}
+
+/* Sovrascrive gli stili di .content img per le bandiere */
+.content .language-flag-img {
+  margin: 0;
+  border-radius: 50%;
+  box-shadow: none;
+  height: 100%;
+}
+
+.language-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.language-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.language-native {
+  font-size: 15px;
+  color: #5f6368;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.language-check {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.language-card:hover .language-check {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.language-check i {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+/* Media query per schermi tablet e desktop */
+@media (min-width: 768px) {
+  .language-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .language-card {
+    padding: 24px;
+  }
+  
+  .language-flag-container {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .language-name {
+    font-size: 24px;
+  }
+  
+  .language-native {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .language-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Fine Schemata language */

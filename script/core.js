@@ -183,6 +183,7 @@ function showHouseRulesPanel() {
             `;
         });
         houseRulesLoaded = true;
+        translate(localStorage.getItem('lang') || 'en', houseRulesContainer);
     }   
 
     document.getElementById('house-rules-screen').style.display = 'block';
@@ -244,6 +245,7 @@ function showMenuPanel() {
             `;
         });
         menuLoaded = true;
+        translate(localStorage.getItem('lang') || 'en', document.getElementById('content-menu'));
     }
 
     document.getElementById('menu-screen').style.display = 'block';
