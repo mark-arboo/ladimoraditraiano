@@ -1,6 +1,6 @@
 let menuLoaded = false;
 let houseRulesLoaded = false;
-
+let restaurantLoaded = false;
 
 
 /**
@@ -156,6 +156,40 @@ function showEmergencyPanel() {
 
 function showRestaurantPanel() {
     hideAllPanels(); 
+
+    // legge il file json dei ristoranti e monta dinamicamente il pannello
+    if (!restaurantLoaded) {
+        console.log('Caricamento restaurant dal JSON');
+        const restaurantContainer = document.getElementById('restaurant-list');
+        restaurantContainer.innerHTML = ''; // Pulisce il contenuto prima di aggiungere gli elementi
+        restaurantObj.forEach(rule => {
+            restaurantContainer.innerHTML = restaurantContainer.innerHTML +  `
+            <div class="restaurant-card">
+            <div class="restaurant-image" style="background-image: url('${rule.image}');"></div>
+            <div class="restaurant-content">
+              <div class="restaurant-header-new">
+                <h3 class="restaurant-name">${rule.name}</h3>
+                <a href="${rule.map}" target="_blank" class="restaurant-map-link">
+                  <i class="fa fa-map" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div class="restaurant-info">
+                <div class="restaurant-detail">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>${rule.street}</span>
+                </div>
+                <div class="restaurant-detail">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <a href="tel:${rule.tel.replaceAll(' ', '')}">${rule.tel}</a>
+                </div>
+              </div>
+            </div>
+          </div>       
+            `;
+        });
+        restaurantLoaded = true;
+        translate(localStorage.getItem('lang') || 'en', restaurantContainer);
+    } 
     document.getElementById('restaurant-screen').style.display = 'block';
     document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
