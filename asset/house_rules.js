@@ -1,4 +1,4 @@
-let house_rules = [
+const house_rules = [
     {
        "icon": "fa fa-ban",
        "data-key": "rule_no_pets"

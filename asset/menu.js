@@ -1,4 +1,4 @@
-let menuObj = [
+const menuObj = [
     {
         "icon": "fa fa-home",
         "function": "showWelcomePanel()",

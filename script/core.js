@@ -1,6 +1,7 @@
 let menuLoaded = false;
 let houseRulesLoaded = false;
 let restaurantLoaded = false;
+let reviewLoaded = false;
 
 
 /**
@@ -132,6 +133,44 @@ function showRecyclingPanel() {
 
 function showReviewPanel() {
     hideAllPanels();
+
+    if (!reviewLoaded) {
+        console.log('Caricamento review dal JSON');
+        const reviewContainer = document.getElementById('reviews-list');
+        reviewContainer.innerHTML = ''; // Pulisce il contenuto prima di aggiungere gli elementi
+        reviewObj.forEach(review => {
+            reviewContainer.innerHTML = reviewContainer.innerHTML +  `
+                <div class="review-card">
+                    <div class="review-header">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">
+                         <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="reviewer-details">
+                        <h4 class="reviewer-name">${review.name}</h4>
+                        <div class="reviewer-country">
+                            <img src="./img/it.png" alt="Italy">
+                            <span>${review.country}</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="review-score">
+                        <div class="score-value">${review.score}</div>
+                    </div>
+                    </div>
+                    <div class="review-date"><span data-key="stay">Soggiorno</span>: ${review.date}</div>
+                    <div class="review-text">
+                    ${review.text}
+                    </div>
+                 </div>       
+            `;
+        });
+        reviewLoaded = true;
+        translate(localStorage.getItem('lang') || 'en', reviewContainer);
+    }
+
+
+
     document.getElementById('review-screen').style.display = 'block';
     document.getElementById('go-splash-button').style.display = 'none';
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu

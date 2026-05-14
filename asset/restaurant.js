@@ -1,4 +1,4 @@
-let restaurantObj = [
+const restaurantObj = [
     {
         "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEpq7V11Bu0Zzdd7us0jxReiK_5t92lp0iMvGEnLfhIjQ3X8cfjFW6p2VUhC_xUDbdNE2mbJcGZlovHiFmsMPhXXR5gKMIXlfh8nlMrjPRDD6K56sdA6M3SZx66mrocMNnaoRrF=w408-h272-k-no",
         "name": "Hostaria del Vicoletto",

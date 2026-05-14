@@ -22,6 +22,7 @@
     <script src="./asset/menu.js"></script>  
     <script src="./asset/house_rules.js"></script> 
     <script src="./asset/restaurant.js"></script> 
+    <script src="./asset/review.js"></script>
 	  <script src="./script/events.js"></script>
     <script src="./i18n/language.js"></script>
     <script src="./script/core.js"></script>
@@ -159,115 +160,9 @@
         <div class="banner-box"></div>
         <div class="banner-title" data-key="reviews">reviews</div>
       </div>
-      <div class="content">
-       
-        <div class="reviews-list">
-          <!-- Review 1 -->
-          <div class="review-card">
-            <div class="review-header">
-              <div class="reviewer-info">
-                <div class="reviewer-avatar">
-                  <i class="fa fa-user-circle" aria-hidden="true"></i>
-                </div>
-                <div class="reviewer-details">
-                  <h4 class="reviewer-name">Anna</h4>
-                  <div class="reviewer-country">
-                    <img src="./img/it.png" alt="Italy">
-                    <span>Italia</span>
-                  </div>
-                </div>
-              </div>
-              <div class="review-score">
-                <div class="score-value">10</div>
-              </div>
-            </div>
-            <div class="review-date">Soggiorno: Aprile 2026</div>
-            <div class="review-text">
-              La struttura è grande, accogliente, luminosa e con spazi esterni. Si trova a 5 minuti a piedi dalla spiaggia e nei dintorni ci sono bar, ristoranti e negozi di prima necessità. Poco distante c’è un ampio parcheggio gratuito. Il proprietario inoltre è gentile e disponibile.
-            </div>
-          </div>
-
-          <!-- Review 2 -->
-          <div class="review-card">
-            <div class="review-header">
-              <div class="reviewer-info">
-                <div class="reviewer-avatar">
-                  <i class="fa fa-user-circle" aria-hidden="true"></i>
-                </div>
-                <div class="reviewer-details">
-                  <h4 class="reviewer-name">Daniela</h4>
-                  <div class="reviewer-country">
-                    <img src="./img/it.png" alt="Italy">
-                    <span>Italia</span>
-                  </div>
-                </div>
-              </div>
-              <div class="review-score">
-                <div class="score-value">10</div>
-              </div>
-            </div>
-            <div class="review-date">Soggiorno: Aprile 2026</div>
-            <div class="review-text">
-              La posizione è fantastica, in pieno centro. Tutto nuovo e pulito, vicinissimo al mare e a tutti i servizi.
-            </div>
-          </div>
-
-          <!-- Review 3 -->
-          <div class="review-card">
-            <div class="review-header">
-              <div class="reviewer-info">
-                <div class="reviewer-avatar">
-                  <i class="fa fa-user-circle" aria-hidden="true"></i>
-                </div>
-                <div class="reviewer-details">
-                  <h4 class="reviewer-name">Alessia</h4>
-                  <div class="reviewer-country">
-                    <img src="./img/it.png" alt="Italy">
-                    <span>Italia</span>
-                  </div>
-                </div>
-              </div>
-              <div class="review-score">
-                <div class="score-value">10</div>
-              </div>
-            </div>
-            <div class="review-date">Soggiorno: Aprile 2026</div>
-            <div class="review-text">
-              Ho soggiornato in questa splendida casa a Terracina e l’esperienza è stata davvero fantastica. La posizione è perfetta: vicinissima al mare e a tutti i principali servizi, il che rende tutto comodo e facilmente raggiungibile senza bisogno di spostarsi troppo.
-
-La casa è accogliente, curata nei dettagli e dotata di ogni comfort necessario per sentirsi come a casa propria. Gli ambienti sono puliti, ben organizzati e pensati per garantire il massimo relax durante il soggiorno.
-
-Un ringraziamento speciale all’host, sempre disponibile, gentile e attento ad ogni esigenza. La sua ospitalità ha reso il soggiorno ancora più piacevole.
-
-Consiglio vivamente questa casa a chiunque voglia trascorrere una vacanza rilassante a Terracina!
-            </div>
-          </div>
-
-          <!-- Review 4 -->
-          <div class="review-card">
-            <div class="review-header">
-              <div class="reviewer-info">
-                <div class="reviewer-avatar">
-                  <i class="fa fa-user-circle" aria-hidden="true"></i>
-                </div>
-                <div class="reviewer-details">
-                  <h4 class="reviewer-name">Daniele</h4>
-                  <div class="reviewer-country">
-                    <img src="./img/it.png" alt="Italy">
-                    <span>Italia</span>
-                  </div>
-                </div>
-              </div>
-              <div class="review-score">
-                <div class="score-value">8</div>
-              </div>
-            </div>
-            <div class="review-date">Soggiorno: Maggio 2026</div>
-            <div class="review-text">
-              Ottimo
-            </div>
-          </div>
-
+      <div class="content"> 
+        <div class="reviews-list" id="reviews-list">
+          REVIEWS  
         </div>
       </div>
     </div>
