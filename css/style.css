@@ -275,12 +275,71 @@ button > i {
   text-align: center; 
 }
 
+
 .contact-info a {
   color: #000;
   padding-left: 20px;
 }
 
 
+.contact-card {
+  margin-bottom: 20px;
+}
+
+.contact-card-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-card-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--over-color));
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.contact-card-icon i {
+  font-size: 28px;
+  color: var(--text-primary-color);
+}
+
+.contact-card-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-card-label {
+  font-size: 14px;
+  color: var(--text-secondary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-card-value {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
 
 .contact_text {
   line-height: 1.2;

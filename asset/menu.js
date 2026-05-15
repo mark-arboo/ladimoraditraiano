@@ -37,7 +37,7 @@ const menuObj = [
     {
         "icon": "fa fa-cutlery",
         "function": "showRestaurantPanel()",
-        "data-key": "restaurant"
+        "data-key": "restaurants"
     },
     {
         "icon": "fa fa-ambulance",
