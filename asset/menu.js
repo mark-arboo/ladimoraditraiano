@@ -40,6 +40,11 @@ const menuObj = [
         "data-key": "restaurants"
     },
     {
+        "icon": "fa fa-coffee",
+        "function": "showCafePanel()",
+        "data-key": "cafes"
+    },
+    {
         "icon": "fa fa-ambulance",
         "function": "showEmergencyPanel()",
         "data-key": "emergency"
@@ -48,5 +53,10 @@ const menuObj = [
         "icon": "fa fa-comments-o",
         "function": "showReviewPanel()",
         "data-key": "reviews"
-    }
+    },
+    {
+        "icon": "fa fa-phone",
+        "function": "showContactsPanel()",
+        "data-key": "contacts"
+    },
 ]

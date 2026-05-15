@@ -2,7 +2,7 @@ let menuLoaded = false;
 let houseRulesLoaded = false;
 let restaurantLoaded = false;
 let reviewLoaded = false;
-
+let cafeLoaded = false;
 
 /**
  * Controlla se è la prima volta che l'applicazione viene caricata
@@ -104,7 +104,10 @@ function onPageRefresh() {
                 break;     
             case 'transport':
                 showTransportPanel();
-                break;     
+                break;  
+            case 'cafes':
+                showCafePanel();
+                break;        
             default:
                 showSplashPanel();
         }
@@ -112,6 +115,51 @@ function onPageRefresh() {
         showSplashPanel();
     }
 }
+
+
+function showCafePanel() {
+    hideAllPanels();
+
+    // legge il file json dei cafe e monta dinamicamente il pannello
+    if (!cafeLoaded) {
+        console.log('Caricamento cafe dal JSON');
+        const cafeContainer = document.getElementById('cafe-list');
+        cafeContainer.innerHTML = ''; // Pulisce il contenuto prima di aggiungere gli elementi
+        cafeObj.forEach(cafe => {
+            cafeContainer.innerHTML = cafeContainer.innerHTML +  `
+                <div class="restaurant-card">
+                    <div class="restaurant-image" style="background-image: url('${cafe.image}');"></div>
+                    <div class="restaurant-content">
+                    <div class="restaurant-header-new">
+                        <h3 class="restaurant-name">${cafe.name}</h3>
+                        <a href="${cafe.map}" target="_blank" class="restaurant-map-link">
+                        <i class="fa fa-map" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-detail">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <span>${cafe.street}</span>
+                        </div>
+                        <div class="restaurant-detail">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:${cafe.tel.replaceAll(' ', '')}">${cafe.tel}</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>  
+            `;
+        });
+        cafeLoaded = true;
+        translate(localStorage.getItem('lang') || 'en', cafeContainer);
+    } 
+
+    document.getElementById('cafe-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none';
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
+    sessionStorage.setItem('lastActivePanel', 'cafes');
+}
+
 
 
 function showTransportPanel() {
