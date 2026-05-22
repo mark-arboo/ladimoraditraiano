@@ -1,5 +1,12 @@
 const reviewObj = [
     {
+        "name": "Maria",
+        "country": "Italia",
+        "score": 8,
+        "date": "Maggio 2026",
+        "text": "Ottimo"
+    },
+    {
         "name": "Daniele",
         "country": "Italia",
         "score": 8,

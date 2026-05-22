@@ -14,11 +14,13 @@ const menuObj = [
         "function": "showLocationPanel()",
         "data-key": "location"
     },
+/*
     {
         "icon": "fa fa-subway",
         "function": "showTransportPanel()",
         "data-key": "transport"
     },
+*/
     {
         "icon": "fa fa-wifi",
         "function": "showWifiPanel()",
