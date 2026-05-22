@@ -105,6 +105,13 @@ button > i {
     background-image: url('../img/reviews.png');
 }
 
+#banner-welcome {
+  background-image: url('../img/welcome.png');
+}
+
+#banner-checkin-out {
+  background-image: url('../img/checkin.png');
+}
 
 .banner-box {
   position: absolute;
