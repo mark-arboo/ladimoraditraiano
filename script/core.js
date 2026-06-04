@@ -197,7 +197,7 @@ function showReviewPanel() {
                         <div class="reviewer-details">
                         <h4 class="reviewer-name">${review.name}</h4>
                         <div class="reviewer-country">
-                            <img src="./img/it.png" alt="Italy">
+                            <img src="./img/${review.flag}" alt="${review.flag}">
                             <span>${review.country}</span>
                         </div>
                         </div>
