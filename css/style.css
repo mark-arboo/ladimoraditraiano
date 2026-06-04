@@ -113,6 +113,19 @@ button > i {
   background-image: url('../img/checkin.png');
 }
 
+#banner-recycling {
+  background-image: url('../img/differenziata.png');
+}
+
+#banner-location {
+  background-image: url('../img/posizione.png');
+}
+
+#banner-wifi {
+  background-image: url('../img/wifi_banner.png');
+}
+
+
 .banner-box {
   position: absolute;
   bottom: 0;
