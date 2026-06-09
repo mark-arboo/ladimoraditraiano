@@ -1,10 +1,18 @@
 const reviewObj = [
     {
+        "name": "Andrea",
+        "country": "Italia",
+        "score": 10,
+        "date": "Giugno 2026",
+        "text": "L'appartamento è molto accogliente, ben arredato, pulito, luminoso e con un bel balcone con sedie e tavolino. Inoltre, è completo di tutto il necessario per cucinare, vicinissimo al mare, bar, ristoranti, supermercati e negozi. Il proprietario è molto ospitale e risponde subito per qualsiasi necessità. Consiglio questa casa per trascorrere una vacanza a Terracina.",
+        "flag": "it.png"
+    },
+    {
         "name": "Tetiana",
         "country": "Ucraina",
         "score": 10,
         "date": "Maggio 2026",
-        "text": "Eccezionale",
+        "text": "Posizione perfetta, posto molto pulito, comodo e spazioso, parcheggio gratuito nelle vicinanze.",
         "flag": "uk.png"
     },
     {
@@ -12,7 +20,7 @@ const reviewObj = [
         "country": "Italia",
         "score": 8,
         "date": "Maggio 2026",
-        "text": "Ottimo",
+        "text": "Ottima l'accoglienza dell'host, la pulizia dell'appartamento e la vicinanza al centro di Terracina.",
         "flag": "it.png"
     },
     {
