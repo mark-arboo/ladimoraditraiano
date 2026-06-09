@@ -98,11 +98,11 @@ button > i {
 }
 
 #banner-restaurant {
-    background-image: url('../img/restaurant.png');
+    background-image: url('../img/restaurant.jpg');
 }
 
 #banner-review {
-    background-image: url('../img/reviews.png');
+    background-image: url('../img/review.jpg');
 }
 
 #banner-welcome {
@@ -123,6 +123,18 @@ button > i {
 
 #banner-wifi {
   background-image: url('../img/wifi_banner.png');
+}
+
+#banner-house-rules {
+  background-image: url('../img/house-rules.jpg');
+}
+
+#banner-cafe {
+  background-image: url('../img/bar.png');
+}
+
+#banner-emergency {
+  background-image: url('../img/emergency.jpg');
 }
 
 
