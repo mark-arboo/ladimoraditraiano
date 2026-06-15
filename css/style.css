@@ -20,6 +20,21 @@ button > i {
   height: 100vh;
   min-height: 100vh;
   position: relative;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+#splash-image {
+  position: absolute;
+  top: calc(50% - 125px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50vh;
+  width: auto;
+  max-width: 90%;
+  object-fit: contain;
+  opacity: 0.6;
+  display: none;
 }
 
 #splash-screen button {
