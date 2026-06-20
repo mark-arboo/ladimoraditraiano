@@ -1020,7 +1020,7 @@ button > i {
   font-weight: 700;
   padding: 8px 12px;
   border-radius: 8px 8px 8px 0;
-  min-width: 45px;
+  min-width: 20px;
   text-align: center;
   line-height: 1;
   margin-bottom: 4px;
