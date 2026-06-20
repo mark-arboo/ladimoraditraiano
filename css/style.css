@@ -105,51 +105,51 @@ button > i {
 }
 
 #banner-contacts {
-    background-image: url('../img/contacts.png');
+    background-image: url('../img/banner/contacts.png');
 }
 
 #banner-language {
-    background-image: url('../img/language.png');
+    background-image: url('../img/banner/language.png');
 }
 
 #banner-restaurant {
-    background-image: url('../img/restaurant.jpg');
+    background-image: url('../img/banner/restaurant.jpg');
 }
 
 #banner-review {
-    background-image: url('../img/review.jpg');
+    background-image: url('../img/banner/review.jpg');
 }
 
 #banner-welcome {
-  background-image: url('../img/welcome.png');
+  background-image: url('../img/banner/welcome.png');
 }
 
 #banner-checkin-out {
-  background-image: url('../img/checkin.png');
+  background-image: url('../img/banner/checkin.png');
 }
 
 #banner-recycling {
-  background-image: url('../img/differenziata.png');
+  background-image: url('../img/banner/differenziata.png');
 }
 
 #banner-location {
-  background-image: url('../img/posizione.png');
+  background-image: url('../img/banner/posizione.png');
 }
 
 #banner-wifi {
-  background-image: url('../img/wifi_banner.png');
+  background-image: url('../img/banner/wifi_banner.png');
 }
 
 #banner-house-rules {
-  background-image: url('../img/house-rules.jpg');
+  background-image: url('../img/banner/house-rules.jpg');
 }
 
 #banner-cafe {
-  background-image: url('../img/bar.png');
+  background-image: url('../img/banner/bar.png');
 }
 
 #banner-emergency {
-  background-image: url('../img/emergency.jpg');
+  background-image: url('../img/banner/emergency.jpg');
 }
 
 
