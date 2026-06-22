@@ -21,12 +21,25 @@
   <body>
     <script src="./asset/menu.js"></script>  
     <script src="./asset/house_rules.js"></script> 
+    <script src="./asset/transport.js"></script>
     <script src="./asset/restaurant.js"></script> 
     <script src="./asset/review.js"></script>
     <script src="./asset/cafe.js"></script>
 	  <script src="./script/events.js"></script>
     <script src="./i18n/language.js"></script>
     <script src="./script/core.js"></script>
+
+
+    <!-- FAQ -->
+    <div id="faq-screen" class="panel">
+      <div class="banner-img" id="banner-faq" >
+        <div class="banner-box"></div>
+        <div class="banner-title" data-key="faq">FAQ</div>
+      </div>
+      <div class="content">
+        FAQ
+      </div>
+    </div>  
 
     <!-- TRANSPORT -->
     <div id="transport-screen" class="panel">
@@ -35,7 +48,10 @@
         <div class="banner-title" data-key="transport">transport</div>
       </div>
       <div class="content">
-        TRANSPORT
+        <p data-key="transport_title"></p>
+        <div class="house-rules-list" id="transport-list">
+          LISTA TRASPORTI...
+        </div>
       </div>
     </div>  
 

@@ -57,8 +57,16 @@
     "unsorted": "General Waste",
     "no_collection": "No Collection",
     "transport": "Transport",
+    "transport_title": "<h3>Getting around Terracina</h3><p>Main transport options to move around Terracina and nearby areas:</p><br />",
+    "transport_train": "Train",
+    "transport_train_url": "https://www.trenitalia.com/it.html",
+    "transport_bus": "Bus",
+    "transport_bus_url": "https://cotralspa.it/ricerca-orari/",
+    "transport_ferry": "Ferry",
+    "transport_ferry_url": "https://www.traghetti.it/",
     "view_on_maps": "Map",
     "stay": "Stay",
-    "cafes": "Cafes"
+    "cafes": "Cafes",
+    "faq": "FAQ"
 
 }

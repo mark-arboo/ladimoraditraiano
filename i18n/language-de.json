@@ -57,8 +57,16 @@
     "unsorted": "Restmüll",
     "no_collection": "Keine Abholung",
     "transport": "Transport",
+    "transport_title": "<h3>Fortbewegung in Terracina</h3><p>Die wichtigsten Verkehrsmittel in Terracina und Umgebung:</p><br />",
+    "transport_train": "Zug",
+    "transport_train_url": "https://www.trenitalia.com/it.html",
+    "transport_bus": "Bus",
+    "transport_bus_url": "https://cotralspa.it/ricerca-orari/",
+    "transport_ferry": "Faehre",
+    "transport_ferry_url": "https://www.traghetti.it/",
     "view_on_maps": "Karte",
     "stay": "Aufenthalt",
-    "cafes": "Cafés"
+    "cafes": "Cafés",
+    "faq": "FAQ"
 
 }

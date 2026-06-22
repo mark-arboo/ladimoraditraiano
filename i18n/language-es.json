@@ -57,8 +57,16 @@
     "unsorted": "Indiferenciado",
     "no_collection": "Sin recogida",
     "transport": "Transporte",
+    "transport_title": "<h3>Como moverse por Terracina</h3><p>Los principales medios de transporte para Terracina y alrededores:</p><br />",
+    "transport_train": "Tren",
+    "transport_train_url": "https://www.trenitalia.com/it.html",
+    "transport_bus": "Autobus",
+    "transport_bus_url": "https://cotralspa.it/ricerca-orari/",
+    "transport_ferry": "Ferry",
+    "transport_ferry_url": "https://www.traghetti.it/",
     "view_on_maps": "Mapa",
     "stay": "Estancia",
-    "cafes": "Cafeterías"
+    "cafes": "Cafeterías",
+    "faq": "FAQ"
 
 }

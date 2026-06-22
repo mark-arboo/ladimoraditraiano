@@ -1,5 +1,6 @@
 let menuLoaded = false;
 let houseRulesLoaded = false;
+let transportLoaded = false;
 let restaurantLoaded = false;
 let reviewLoaded = false;
 let cafeLoaded = false;
@@ -108,12 +109,29 @@ function onPageRefresh() {
             case 'cafes':
                 showCafePanel();
                 break;        
+            case 'faq':
+                showFAQPanel();
+                break;
             default:
                 showSplashPanel();
         }
     } else {
         showSplashPanel();
     }
+}
+
+
+function showFAQPanel() {
+    hideAllPanels();
+
+
+
+    
+    document.getElementById('faq-screen').style.display = 'block';
+    document.getElementById('go-splash-button').style.display = 'none';
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
+    sessionStorage.setItem('lastActivePanel', 'faq');
+
 }
 
 
@@ -164,6 +182,28 @@ function showCafePanel() {
 
 function showTransportPanel() {
     hideAllPanels();
+
+    if (!transportLoaded) {
+        console.log('Caricamento trasporti dal JSON');
+        const transportContainer = document.getElementById('transport-list');
+        transportContainer.innerHTML = '';
+        transportObj.forEach(transport => {
+            const url = translations[transport['url-key']] || '#';
+            transportContainer.innerHTML = transportContainer.innerHTML +  `
+            <div class="house-rule-item">
+                <div class="house-rule-icon">
+                    <i class="${transport.icon}" aria-hidden="true"></i>
+                </div>
+                <a href="${url}" target="_blank" rel="noopener noreferrer" class="house-rule-text house-rule-link" data-key="${transport['data-key']}">
+                    ${transport['data-key'].toUpperCase()}
+                </a>
+            </div>
+            `;
+        });
+        transportLoaded = true;
+        translate(localStorage.getItem('lang') || 'en', document.getElementById('transport-screen'));
+    }
+
     document.getElementById('transport-screen').style.display = 'block';
     document.getElementById('go-splash-button').style.display = 'none';
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
