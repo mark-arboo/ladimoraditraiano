@@ -95,6 +95,7 @@ button > i {
 }
 
 .banner-img {
+  /*
     position: absolute;
     top: 0;
     width: 100%;
@@ -102,8 +103,21 @@ button > i {
     display: block;
     background-size: cover;
     background-position: center;
+    */
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 50px;
+  transform: translateX(-50%); /* centra il bottone orizzontalmente */
+  /*color: var(--text-secondary-color);
+  background-color: var(--background-title-color);  */
+  border-radius: 10px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 70px;
 }
 
+/*
 #banner-contacts {
     background-image: url('../img/banner/contacts.png');
 }
@@ -151,7 +165,7 @@ button > i {
 #banner-emergency {
   background-image: url('../img/banner/emergency.jpg');
 }
-
+*/
 
 .banner-box {
   position: absolute;
@@ -166,7 +180,7 @@ button > i {
   position: absolute;
   left: 50%;
   bottom: -20px;
-  width: 90%;
+  width: 80%;
   height: 70px;
   transform: translateX(-50%); /* centra il bottone orizzontalmente */
   color: var(--text-secondary-color);
@@ -179,7 +193,7 @@ button > i {
 
 .content {
   position: absolute;
-  top: 30vh;
+  top: 70px;
   width: 100%;
   background-color: var(--text-primary-color); /* colore di sfondo per il contenuto */
   box-sizing: border-box;
