@@ -1,5 +1,21 @@
 const reviewObj = [
     {
+        "name": "Ugo",
+        "country": "Italia",
+        "score": 9,
+        "date": "Giugno 2026",
+        "text": "Eccellente",
+        "flag": "it.png"
+    },
+    {
+        "name": "Alyssa",
+        "country": "USA",
+        "score": 10,
+        "date": "Giugno 2026",
+        "text": "Io e le mie amiche alloggiavamo a Roma e volevamo fare una breve gita al mare. Non avevamo mai sentito parlare di Terracina prima, ma abbiamo deciso di rischiare e, wow, siamo rimaste davvero colpite. Questa pittoresca cittadina ha superato tutte le nostre aspettative. L'appartamento di Marco era proprio sulla spiaggia, al centro di tutto (ristoranti, bar, entrambe le spiagge, ecc.). Abbiamo preso il treno e poi l'autobus per Terracina e Marco ci ha incontrato alla fermata dell'autobus, il che è stato davvero molto gentile da parte sua. Ci ha accompagnato all'appartamento e ha risposto a tutte le domande che avevamo. Consiglio vivamente questo soggiorno a chiunque!",
+        "flag": "usa.png"
+    },
+    {
         "name": "Andrea",
         "country": "Italia",
         "score": 10,
