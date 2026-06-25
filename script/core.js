@@ -4,6 +4,7 @@ let transportLoaded = false;
 let restaurantLoaded = false;
 let reviewLoaded = false;
 let cafeLoaded = false;
+let faqLoaded = false;
 
 /**
  * Controlla se è la prima volta che l'applicazione viene caricata
@@ -124,9 +125,28 @@ function onPageRefresh() {
 function showFAQPanel() {
     hideAllPanels();
 
-
-
-    
+    // legge il file json dei faq.js e monta dinamicamente il pannello
+    if (!faqLoaded) {
+        console.log('Caricamento faq dal JSON');
+        const faqContainer = document.getElementById('faq-list');
+        faqContainer.innerHTML = ''; // Pulisce il contenuto prima di aggiungere gli elementi
+        faqObj.forEach(faq => {
+            faqContainer.innerHTML = faqContainer.innerHTML +  `
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="${faq.Q}" aria-hidden="true"></i>
+                        <span data-key="${faq.Q}">${faq.Q.toUpperCase()}</span>
+                    </div>
+                    <div class="faq-answer" data-key="${faq.A}">
+                        ${faq.A.toUpperCase()}
+                    </div>
+                </div>  
+            `;
+        });
+        faqLoaded = true;
+        translate(localStorage.getItem('lang') || 'en', faqContainer);
+    }   
+        
     document.getElementById('faq-screen').style.display = 'block';
     document.getElementById('go-splash-button').style.display = 'none';
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu

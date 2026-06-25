@@ -67,6 +67,24 @@
     "view_on_maps": "Map",
     "stay": "Stay",
     "cafes": "Cafes",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "faq_Q_checkin": "Can I check in earlier or later than the scheduled time?",
+    "faq_A_checkin": "Check-in time is from 3:00 PM to 8:00 PM. If you would like to arrive earlier or later, contact us and we will do our best to accommodate you, depending on our schedule.",
+    "faq_Q_checkout": "Can I check out earlier or later than the scheduled time?",
+    "faq_A_checkout": "Check-out time is from 8:00 AM to 10:00 AM. If you would like to check out earlier or later, contact us and we will do our best to accommodate you, depending on our schedule.",
+    "faq_Q_parking": "Is parking available?",
+    "faq_A_parking": "There is no private parking available. However, you can park for free on the street near the apartment or in the large free parking area on Via Stella Polare, about a 5-minute walk from the apartment.",
+    "faq_Q_bed": "Is it possible to add an extra crib for a child?",
+    "faq_A_bed": "Yes, it is possible to add an extra crib for a child. Please contact us in advance so we can arrange it and make sure it is available during your stay.",
+    "faq_Q_pets": "Are pets allowed?",
+    "faq_A_pets": "Unfortunately, pets are not allowed in our property, even small ones.",
+    "faq_Q_smoking": "Is smoking allowed inside the apartment?",
+    "faq_A_smoking": "No, smoking is not allowed inside the apartment. However, you may smoke outside while respecting designated areas and keeping the environment clean.",
+    "faq_Q_airconditions": "Does the apartment have air conditioning?",
+    "faq_A_airconditions": "Yes, the apartment has air conditioning in both bedrooms and in the living room.",
+    "faq_Q_kitchen": "Is the kitchen fully equipped?",
+    "faq_A_kitchen": "Yes, the kitchen is fully equipped with pots, dishes, cutlery, appliances, and everything needed to cook and prepare meals.",
+    "faq_Q_sheets_and_towels": "Are towels and bed sheets provided?",
+    "faq_A_sheets_and_towels": "Yes, we provide clean towels and bed sheets for all guests."
 
 }

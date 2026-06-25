@@ -67,6 +67,24 @@
     "view_on_maps": "Mapa",
     "stay": "Estancia",
     "cafes": "Cafeterías",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "faq_Q_checkin": "¿Puedo hacer el check-in antes o después del horario previsto?",
+    "faq_A_checkin": "El horario de check-in es de 15:00 a 20:00. Si deseas llegar antes o después, contáctanos y haremos todo lo posible para ayudarte, según nuestra disponibilidad.",
+    "faq_Q_checkout": "¿Puedo hacer el check-out antes o después del horario previsto?",
+    "faq_A_checkout": "El horario de check-out es de 08:00 a 10:00. Si deseas hacer el check-out antes o después, contáctanos y haremos todo lo posible para ayudarte, según nuestra disponibilidad.",
+    "faq_Q_parking": "¿Hay aparcamiento disponible?",
+    "faq_A_parking": "No hay aparcamiento privado disponible. Sin embargo, se puede aparcar gratis en la calle cerca del apartamento o en el gran aparcamiento gratuito de Via Stella Polare, a unos 5 minutos a pie del apartamento.",
+    "faq_Q_bed": "¿Es posible añadir una cuna extra para un niño?",
+    "faq_A_bed": "Sí, es posible añadir una cuna extra para un niño. Te pedimos que nos contactes con antelación para organizarla y confirmar su disponibilidad durante tu estancia.",
+    "faq_Q_pets": "¿Se admiten mascotas?",
+    "faq_A_pets": "Lamentablemente, no se admiten mascotas en nuestro alojamiento, ni siquiera de tamaño pequeño.",
+    "faq_Q_smoking": "¿Se permite fumar dentro del apartamento?",
+    "faq_A_smoking": "No, no se permite fumar dentro del apartamento. Sin embargo, se puede fumar en el exterior, respetando las zonas designadas y manteniendo el entorno limpio.",
+    "faq_Q_airconditions": "¿El apartamento dispone de aire acondicionado?",
+    "faq_A_airconditions": "Sí, el apartamento dispone de aire acondicionado en ambos dormitorios y en la sala de estar.",
+    "faq_Q_kitchen": "¿La cocina está equipada con todo lo necesario?",
+    "faq_A_kitchen": "Sí, la cocina está completamente equipada con ollas, vajilla, cubiertos, electrodomésticos y todo lo necesario para cocinar y preparar comidas.",
+    "faq_Q_sheets_and_towels": "¿Se proporcionan toallas y sábanas?",
+    "faq_A_sheets_and_towels": "Sí, proporcionamos toallas y sábanas limpias para todos los huéspedes."
 
 }

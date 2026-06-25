@@ -67,6 +67,23 @@
     "view_on_maps": "Mappa",
     "stay": "Soggiorno",
     "cafes" : "Bar",
-    "faq": "FAQ"
-
+    "faq": "FAQ",
+    "faq_Q_checkin" : "Posso fare il check-in prima o dopo dell'orario previsto?",
+    "faq_A_checkin" : "Gli orari di check-in sono dalle 15:00 alle 20:00. Se desideri arrivare prima o dopo, contattaci e faremo del nostro meglio per accontentarti, a seconda del nostro programma.",
+    "faq_Q_checkout" : "Posso fare il check-out prima o dopo dell'orario previsto?",
+    "faq_A_checkout" : "Gli orari di check-out sono dalle 08:00 alle 10:00. Se desideri fare il check-out prima o dopo, contattaci e faremo del nostro meglio per accontentarti, a seconda del nostro programma.",
+    "faq_Q_parking" : "C'è un parcheggio disponibile?",
+    "faq_A_parking" : "Non c'è un parcheggio privato disponibile. Tuttavia, si può parcheggiare gratuitamente lungo la strada, vicino all'appartamento oppure nel grande parcheggio gratuito di Via Stella Polare, a circa 5 minuti a piedi dall'appartamento.",
+    "faq_Q_bed": "E' possibile aggiungere un lettino extra per un bambino?",
+    "faq_A_bed": "Sì, è possibile aggiungere un lettino extra per un bambino. Ti preghiamo di contattarci in anticipo per organizzare il lettino e assicurarti che sia disponibile durante il tuo soggiorno.",
+    "faq_Q_pets": "Sono ammessi animali domestici?",
+    "faq_A_pets": "Purtroppo, non sono ammessi animali domestici nella nostra struttura, anche se di piccola taglia.",
+    "faq_Q_smoking": "E' consentito fumare all'interno dell'appartamento?",
+    "faq_A_smoking": "No, non è consentito fumare all'interno dell'appartamento. Tuttavia, è possibile fumare all'esterno, rispettando le aree designate e mantenendo l'ambiente pulito.",
+    "faq_Q_airconditions": "L'appartamento dispone di aria condizionata?",
+    "faq_A_airconditions": "Sì, l'appartamento è dotato di aria condizionata in entrambe le camere da letto e nel soggiorno.",
+    "faq_Q_kitchen": "La cucina è attrezzata con tutto il necessario?",
+    "faq_A_kitchen": "Sì, la cucina è completamente attrezzata con pentole, stoviglie, posate, elettrodomestici e tutto il necessario per cucinare e preparare i pasti.",
+    "faq_Q_sheets_and_towels": "Gli asciugamani e le lenzuola sono forniti?",
+    "faq_A_sheets_and_towels": "Sì, forniamo asciugamani e lenzuola puliti per tutti gli ospiti."
 }   

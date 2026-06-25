@@ -67,6 +67,24 @@
     "view_on_maps": "Carte",
     "stay": "Séjour",
     "cafes": "Cafés",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "faq_Q_checkin": "Puis-je faire le check-in avant ou après l'horaire prévu ?",
+    "faq_A_checkin": "Les horaires de check-in sont de 15h00 à 20h00. Si vous souhaitez arriver plus tôt ou plus tard, contactez-nous et nous ferons de notre mieux pour vous aider, selon notre disponibilité.",
+    "faq_Q_checkout": "Puis-je faire le check-out avant ou après l'horaire prévu ?",
+    "faq_A_checkout": "Les horaires de check-out sont de 08h00 à 10h00. Si vous souhaitez partir plus tôt ou plus tard, contactez-nous et nous ferons de notre mieux pour vous aider, selon notre disponibilité.",
+    "faq_Q_parking": "Y a-t-il un parking disponible ?",
+    "faq_A_parking": "Il n'y a pas de parking prive disponible. Cependant, vous pouvez vous garer gratuitement dans la rue pres de l'appartement ou dans le grand parking gratuit de Via Stella Polare, a environ 5 minutes a pied.",
+    "faq_Q_bed": "Est-il possible d'ajouter un lit bebe supplementaire ?",
+    "faq_A_bed": "Oui, il est possible d'ajouter un lit bebe supplementaire. Merci de nous contacter a l'avance pour l'organiser et verifier sa disponibilite pendant votre sejour.",
+    "faq_Q_pets": "Les animaux de compagnie sont-ils autorises ?",
+    "faq_A_pets": "Malheureusement, les animaux de compagnie ne sont pas autorises dans notre hebergement, meme de petite taille.",
+    "faq_Q_smoking": "Est-il permis de fumer a l'interieur de l'appartement ?",
+    "faq_A_smoking": "Non, il n'est pas permis de fumer a l'interieur de l'appartement. Cependant, il est possible de fumer a l'exterieur, en respectant les zones prevues et en gardant l'environnement propre.",
+    "faq_Q_airconditions": "L'appartement dispose-t-il de la climatisation ?",
+    "faq_A_airconditions": "Oui, l'appartement dispose de la climatisation dans les deux chambres et dans le salon.",
+    "faq_Q_kitchen": "La cuisine est-elle equipee avec tout le necessaire ?",
+    "faq_A_kitchen": "Oui, la cuisine est entierement equipee avec casseroles, vaisselle, couverts, appareils electromenagers et tout le necessaire pour cuisiner et preparer les repas.",
+    "faq_Q_sheets_and_towels": "Les serviettes et les draps sont-ils fournis ?",
+    "faq_A_sheets_and_towels": "Oui, nous fournissons des serviettes et des draps propres pour tous les invites."
 
 }

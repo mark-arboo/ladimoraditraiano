@@ -67,6 +67,24 @@
     "view_on_maps": "Karte",
     "stay": "Aufenthalt",
     "cafes": "Cafés",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "faq_Q_checkin": "Kann ich frueher oder spaeter als zur vorgesehenen Zeit einchecken?",
+    "faq_A_checkin": "Die Check-in-Zeiten sind von 15:00 bis 20:00 Uhr. Wenn Sie frueher oder spaeter anreisen moechten, kontaktieren Sie uns bitte. Je nach unserem Zeitplan tun wir unser Bestes, um Ihnen entgegenzukommen.",
+    "faq_Q_checkout": "Kann ich frueher oder spaeter als zur vorgesehenen Zeit auschecken?",
+    "faq_A_checkout": "Die Check-out-Zeiten sind von 08:00 bis 10:00 Uhr. Wenn Sie frueher oder spaeter auschecken moechten, kontaktieren Sie uns bitte. Je nach unserem Zeitplan tun wir unser Bestes, um Ihnen entgegenzukommen.",
+    "faq_Q_parking": "Gibt es einen verfuegbaren Parkplatz?",
+    "faq_A_parking": "Es gibt keinen privaten Parkplatz. Sie koennen jedoch kostenlos auf der Strasse in der Naehe des Apartments oder auf dem grossen kostenlosen Parkplatz in der Via Stella Polare parken, etwa 5 Gehminuten vom Apartment entfernt.",
+    "faq_Q_bed": "Ist es moeglich, ein zusaetzliches Kinderbett hinzuzufuegen?",
+    "faq_A_bed": "Ja, es ist moeglich, ein zusaetzliches Kinderbett bereitzustellen. Bitte kontaktieren Sie uns im Voraus, damit wir alles organisieren und die Verfuegbarkeit waehrend Ihres Aufenthalts sicherstellen koennen.",
+    "faq_Q_pets": "Sind Haustiere erlaubt?",
+    "faq_A_pets": "Leider sind Haustiere in unserer Unterkunft nicht erlaubt, auch keine kleinen.",
+    "faq_Q_smoking": "Ist das Rauchen in der Wohnung erlaubt?",
+    "faq_A_smoking": "Nein, das Rauchen in der Wohnung ist nicht erlaubt. Sie koennen jedoch draussen rauchen, wenn Sie die vorgesehenen Bereiche respektieren und die Umgebung sauber halten.",
+    "faq_Q_airconditions": "Verfuegt das Apartment ueber eine Klimaanlage?",
+    "faq_A_airconditions": "Ja, das Apartment ist in beiden Schlafzimmern und im Wohnzimmer mit Klimaanlage ausgestattet.",
+    "faq_Q_kitchen": "Ist die Kueche mit allem Notwendigen ausgestattet?",
+    "faq_A_kitchen": "Ja, die Kueche ist komplett ausgestattet mit Toepfen, Geschirr, Besteck, Geraeten und allem, was zum Kochen und Zubereiten von Mahlzeiten benoetigt wird.",
+    "faq_Q_sheets_and_towels": "Werden Handtuecher und Bettwaesche bereitgestellt?",
+    "faq_A_sheets_and_towels": "Ja, wir stellen allen Gaesten saubere Handtuecher und Bettwaesche zur Verfuegung."
 
 }
