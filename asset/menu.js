@@ -58,10 +58,12 @@ const menuObj = [
         "icon": "fa fa-phone",
         "function": "showContactsPanel()",
         "data-key": "contacts"
-    },
+    }
+/*
     {
         "icon": "fa fa-question-circle",
         "function": "showFAQPanel()",
         "data-key": "faq"
     }
+*/
 ]
