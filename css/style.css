@@ -511,6 +511,70 @@ button > i {
 
 /* Fine Schemata House Rules */
 
+
+
+/* Inizio Schemata WIFI */
+.wifi-list {
+  width: 100%;
+}
+
+.wifi-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wifi-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.wifi-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--over-color));
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.wifi-icon i {
+  font-size: 40px;
+  color: var(--text-primary-color);
+}
+
+.wifi-text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  align-self: center;
+}
+
+.wifi-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.wifi-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Fine Schemata WIFI */
+
+
+
+
 /* Inizio Schemata FAQ */
 .faq-list {
   display: flex;
@@ -582,6 +646,9 @@ button > i {
 }
 
 /* Fine Schemata FAQ */
+
+
+
 
 
 .emergency-info {
