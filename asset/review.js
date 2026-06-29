@@ -1,5 +1,13 @@
 const reviewObj = [
     {
+        "name": "Simona",
+        "country": "Italia",
+        "score": 10,
+        "date": "Giugno 2026",
+        "text": "Abbiamo trascorso 2 giorni meravigliosi. Appartamento comodo e pulito, Marco è un host attendo ai dettagli, al nostro arrivo abbiamo trovato acqua fresca, cialde del caffè e plumcake per la colazione. L'appartamento si trova in una zona ottima, a due passi c'è tutto... supermercati, fruttivendoli, ristoranti e negozi di ogni tipo e soprattutto vicino al mare, con spiaggia libera e stabilimento. LO STRA CONSIGLIO",
+        "flag": "it.png"
+    },
+    {
         "name": "Ugo",
         "country": "Italia",
         "score": 9,

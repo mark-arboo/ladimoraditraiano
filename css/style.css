@@ -212,6 +212,7 @@ button > i {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 10px; /* spazio tra gli elementi */
+  padding-bottom: 80px;
 }
 
 .content-menu > .content-menu-icon {
