@@ -1,5 +1,13 @@
 const reviewObj = [
     {
+        "name": "Shelley",
+        "country": "Alaska",
+        "score": 10,
+        "date": "Luglio 2026",
+        "text": "Questo alloggio vale sicuramente il prezzo. Ottima posizione per raggiungere la spiaggia, i ristoranti, i negozi e molto altro! Marco è un host eccellente e disponibile ad aiutare per qualsiasi necessità. I suoi consigli su attività da fare e posti dove mangiare sono stati meravigliosi! Check-in e check-out facili.",
+        "flag": "usa.png"
+    },
+    {
         "name": "Simona",
         "country": "Italia",
         "score": 10,
