@@ -1338,7 +1338,7 @@ button > i {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.language-card:hover .language-check {
+.language-card.selected .language-check {
   opacity: 1;
   transform: scale(1.1);
 }

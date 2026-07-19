@@ -5,6 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
     loadTranslations(savedLang);
 });
 
+function updateSelectedLanguageCard(lang) {
+    document.querySelectorAll('.language-card').forEach(card => {
+        card.classList.toggle('selected', card.getAttribute('data-lang') === lang);
+    });
+}
+
+function selectLanguage(lang) {
+    loadTranslations(lang);
+}
+
 
 async function loadTranslations(savedLang) {
     try {
@@ -21,10 +31,12 @@ async function loadTranslations(savedLang) {
                 
         // 4. Applica immediatamente le traduzioni agli elementi esistenti
         translate(savedLang, document);
+        updateSelectedLanguageCard(savedLang);
        
     } catch (error) {
         console.error("Errore nel caricamento del JSON:", error);
         translate(savedLang, document);
+        updateSelectedLanguageCard(savedLang);
     }
 }
 

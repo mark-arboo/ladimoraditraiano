@@ -445,6 +445,11 @@ function showContactsPanel() {
 
 function showLanguagePanel() {
     hideAllPanels();
+
+    if (typeof updateSelectedLanguageCard === 'function') {
+        updateSelectedLanguageCard(localStorage.getItem('lang') || 'en');
+    }
+
     document.getElementById('language-screen').style.display = 'block';
     document.getElementById('go-splash-button').style.display = 'block'; // Mostra il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu
