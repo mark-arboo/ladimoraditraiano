@@ -1,5 +1,13 @@
 const reviewObj = [
     {
+        "name": "Rita",
+        "country": "Italia",
+        "score": 10,
+        "date": "Luglio 2026",
+        "text": "Esperienza ottima. Appartamento pulito e con tutto quello che serve. È stato facile muoversi a piedi sia per il mare che per le serate. Ottima posizione. Lo consiglio sicuramente",
+        "flag": "it.png"
+    },
+    {
         "name": "Shelley",
         "country": "Alaska",
         "score": 10,
