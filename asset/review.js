@@ -1,5 +1,13 @@
 const reviewObj = [
     {
+        "name": "Teresa",
+        "country": "Polonia",
+        "score": 10,
+        "date": "Settembre 2026",
+        "text": "Un soggiorno fantastico. La posizione della struttura è incredibile (vicina alla spiaggia e al centro). Marco, un host molto gentile e disponibile.",
+        "flag": "po.png"
+    },
+    {
         "name": "Rita",
         "country": "Italia",
         "score": 10,
