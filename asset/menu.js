@@ -5,6 +5,11 @@ const menuObj = [
         "data-key": "home"
     },
     {
+        "icon": "fa fa-globe",
+        "function": "showLanguagePanel()",
+        "data-key": "language"
+    },
+    {
         "icon": "fa fa-key",
         "function": "showCheckinOutPanel()",
         "data-key": "checkin_out"

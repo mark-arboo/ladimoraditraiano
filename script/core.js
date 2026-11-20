@@ -430,7 +430,7 @@ function showMenuPanel() {
     }
 
     document.getElementById('menu-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'block'; // Mostra il pulsante per tornare alla splash
+    document.getElementById('go-splash-button').style.display = 'none'; // Mostra il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'menu');
 }
@@ -438,8 +438,8 @@ function showMenuPanel() {
 function showContactsPanel() {
     hideAllPanels();
     document.getElementById('contacts-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'block'; // Mostra il pulsante per tornare alla splash
-    document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu
+    document.getElementById('go-splash-button').style.display = 'none'; // Mostra il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'block'; // Nasconde il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'contacts');
 }
 
@@ -451,8 +451,8 @@ function showLanguagePanel() {
     }
 
     document.getElementById('language-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'block'; // Mostra il pulsante per tornare alla splash
-    document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu
+    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
+    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
     
     sessionStorage.setItem('lastActivePanel', 'language');
 }
