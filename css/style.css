@@ -46,7 +46,8 @@ button > i {
 
 #splash-logo {
   width: min(40vh, 240px);
-  aspect-ratio: 1 / 1;
+  height: min(40vh, 240px);
+  flex: 0 0 auto;
   padding: 38px;
   box-sizing: border-box;
   border-radius: 50%;
@@ -101,17 +102,106 @@ button > i {
 }
 
 .banner-menu {
+  position: relative;
+  width: 100%;
+  height: 250px; 
+  height: clamp(160px, 30vh, 320px);
+  height: clamp(160px, 30svh, 320px);
+  overflow: hidden;
+  background-image: url('../img/banner/welcome.png'); 
+}
+
+.banner-menu > img {
   position: absolute;
-  left: 50%;
-  width: 80%;
-  height: 70px;
-  transform: translateX(-50%); /* centra il bottone orizzontalmente */
-  color: var(--text-secondary-color);
-  background-color: var(--background-title-color);  
-  border-radius: 10px;
-  font-size: 40px;
-  text-align: center;
-  line-height: 70px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-menu::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.4) 45%, rgba(0, 0, 0, 0) 75%);
+}
+
+.menu-flags {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: flex;
+  gap: 6px;
+}
+
+.menu-flag {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.menu-flag img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.menu-flag.selected {
+  border-color: #fff;
+}
+
+.banner-menu p:first-of-type {
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  left: 5%;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.banner-menu p:last-of-type {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  left: 5%;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 25px;
+  text-align: left;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 480px) {
+  .banner-menu p:first-of-type {
+    bottom: 34px;
+    left: 4%;
+    padding: 2px 6px;
+    font-size: 22px;
+  }
+
+  .banner-menu p:last-of-type {
+    bottom: 6px;
+    left: 4%;
+    padding: 2px 6px;
+    font-size: 14px;
+  }
 }
 
 .banner-welcome {    
@@ -231,7 +321,6 @@ button > i {
 }
 
 .content-menu {
-  position: absolute;
   top: 100px;
   width: 100%;
   background-color: var(--text-primary-color); /* colore di sfondo per il contenuto */
@@ -263,14 +352,18 @@ button > i {
 }
 
 .icon-container {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  max-width: 130px;
+  aspect-ratio: 1 / 1;
   background: linear-gradient(135deg, var(--primary-color), var(--over-color));
   border-radius: 10%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  gap: 6px;
+  padding: 8px;
+  box-sizing: border-box;
   /*box-shadow: 0 4px 12px rgba(67, 149, 179, 0.3);*/
   transition: all 0.3s ease;
 }
@@ -286,12 +379,11 @@ button > i {
 }
 
 .icon-text {
-  font-size: 14px;
-  color: var(--text-secondary-color);
+  font-size: 12px;
+  color: var(--text-primary-color);
   text-align: center;
   font-weight: 500;
   line-height: 1.2;
-  margin-top: 5px;
 }
 
 .go-splash-button {
@@ -1260,149 +1352,3 @@ button > i {
 /* Fine Schemata Reviews */
 
 
-/* Inizio Schemata language */
-.language-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 20px;
-  padding-bottom: 20px;
-}
-
-.language-card {
-  background: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 2px solid #e0e0e0;
-  overflow: hidden;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  cursor: pointer;
-  position: relative;
-}
-
-.language-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 16px rgba(67, 149, 179, 0.25);
-  border-color: var(--primary-color);
-}
-
-.language-card:active {
-  transform: translateY(-1px);
-}
-
-.language-flag-container {
-  flex-shrink: 0;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--primary-color), var(--over-color));
-  padding: 3px;
-  box-shadow: 0 3px 10px rgba(67, 149, 179, 0.3);
-  transition: all 0.3s ease;
-}
-
-.language-card:hover .language-flag-container {
-  transform: scale(1.08);
-  box-shadow: 0 4px 14px rgba(67, 149, 179, 0.4);
-}
-
-.language-flag-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  background: #fff;
-  padding: 8px;
-}
-
-/* Sovrascrive gli stili di .content img per le bandiere */
-.content .language-flag-img {
-  margin: 0;
-  border-radius: 50%;
-  box-shadow: none;
-  height: 100%;
-}
-
-.language-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.language-name {
-  font-size: 22px;
-  font-weight: 700;
-  color: #333;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.language-native {
-  font-size: 15px;
-  color: #5f6368;
-  margin: 0;
-  line-height: 1.3;
-}
-
-.language-check {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.language-card.selected .language-check {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.language-check i {
-  font-size: 32px;
-  color: var(--primary-color);
-}
-
-/* Media query per schermi tablet e desktop */
-@media (min-width: 768px) {
-  .language-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  
-  .language-card {
-    padding: 24px;
-  }
-  
-  .language-flag-container {
-    width: 90px;
-    height: 90px;
-  }
-  
-  .language-name {
-    font-size: 24px;
-  }
-  
-  .language-native {
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .language-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Fine Schemata language */

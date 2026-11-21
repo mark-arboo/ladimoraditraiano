@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function updateSelectedLanguageCard(lang) {
-    document.querySelectorAll('.language-card').forEach(card => {
+    document.querySelectorAll('.menu-flag').forEach(card => {
         card.classList.toggle('selected', card.getAttribute('data-lang') === lang);
     });
 }

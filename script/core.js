@@ -74,9 +74,6 @@ function onPageRefresh() {
             case 'contacts':
                 showContactsPanel();
                 break;
-            case 'language':
-                showLanguagePanel();
-                break;
             case 'welcome':
                 showWelcomePanel();
                 break;  
@@ -420,9 +417,8 @@ function showMenuPanel() {
             <div class="content-menu-icon">
                 <div class="icon-container" onclick="${item.function}" >
                     <i class="${item.icon}" aria-hidden="true"></i>
-                </div>
-                <div class="icon-text" data-key="${item['data-key']}">${item['data-key'].toUpperCase()}</div>
-            </div>            
+                    <div class="icon-text" data-key="${item['data-key']}">${item['data-key'].toUpperCase()}</div>
+                </div>            
             `;
         });
         menuLoaded = true;
@@ -442,22 +438,6 @@ function showContactsPanel() {
     document.getElementById('go-menu-button').style.display = 'block'; // Nasconde il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'contacts');
 }
-
-function showLanguagePanel() {
-    hideAllPanels();
-
-    if (typeof updateSelectedLanguageCard === 'function') {
-        updateSelectedLanguageCard(localStorage.getItem('lang') || 'en');
-    }
-
-    document.getElementById('language-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
-    document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
-    
-    sessionStorage.setItem('lastActivePanel', 'language');
-}
-
-
 
 function hideAllPanels() {
     document.querySelectorAll('.panel').forEach(panel => {
