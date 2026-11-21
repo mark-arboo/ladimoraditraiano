@@ -140,8 +140,8 @@ button > i {
 }
 
 .menu-flag {
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   padding: 0;
   border: 2px solid transparent;
   border-radius: 50%;
@@ -169,7 +169,7 @@ button > i {
   left: 5%;
   color: #fff;
   padding: 5px 10px;
-  font-size: 35px;
+  font-size: 40px;
   font-style: italic;
   font-weight: bold;
   text-align: left;
@@ -183,7 +183,7 @@ button > i {
   left: 5%;
   color: #fff;
   padding: 5px 10px;
-  font-size: 25px;
+  font-size: 30px;
   text-align: left;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
 }
@@ -193,14 +193,14 @@ button > i {
     bottom: 34px;
     left: 4%;
     padding: 2px 6px;
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .banner-menu p:last-of-type {
     bottom: 6px;
     left: 4%;
     padding: 2px 6px;
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 
@@ -347,13 +347,12 @@ button > i {
 }
 
 .content-menu-icon:hover {
-  transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .icon-container {
   width: 100%;
-  max-width: 130px;
+  max-width: 150px;
   aspect-ratio: 1 / 1;
   background: linear-gradient(135deg, var(--primary-color), var(--over-color));
   border-radius: 10%;
@@ -369,17 +368,16 @@ button > i {
 }
 
 .content-menu-icon:hover .icon-container {
-  transform: scale(1.1);
   box-shadow: 0 6px 16px rgba(67, 149, 179, 0.4);
 }
 
 .icon-container i {
-  font-size: var(--icon-font-size);
+  font-size: calc(var(--icon-font-size) * 1.2);
   color: var(--text-primary-color);
 }
 
 .icon-text {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text-primary-color);
   text-align: center;
   font-weight: 500;
