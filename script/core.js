@@ -145,7 +145,6 @@ function showFAQPanel() {
     }   
         
     document.getElementById('faq-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none';
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'faq');
 
@@ -190,7 +189,6 @@ function showCafePanel() {
     } 
 
     document.getElementById('cafe-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none';
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'cafes');
 }
@@ -222,7 +220,6 @@ function showTransportPanel() {
     }
 
     document.getElementById('transport-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none';
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'transport');
 }
@@ -231,7 +228,6 @@ function showTransportPanel() {
 function showRecyclingPanel() {
     hideAllPanels();
     document.getElementById('recycling-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'recycling');
 }   
@@ -277,7 +273,6 @@ function showReviewPanel() {
 
 
     document.getElementById('review-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none';
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'review');
 }
@@ -285,7 +280,6 @@ function showReviewPanel() {
 function showLocationPanel() {
     hideAllPanels();
     document.getElementById('location-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'location');
 }
@@ -293,7 +287,6 @@ function showLocationPanel() {
 function showEmergencyPanel() {
     hideAllPanels();
     document.getElementById('emergency-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'emergency');
 }
@@ -335,7 +328,6 @@ function showRestaurantPanel() {
         translate(localStorage.getItem('lang') || 'en', restaurantContainer);
     } 
     document.getElementById('restaurant-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'restaurant');
 }
@@ -365,7 +357,6 @@ function showHouseRulesPanel() {
     }   
 
     document.getElementById('house-rules-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'house_rules');
 }
@@ -374,7 +365,6 @@ function showHouseRulesPanel() {
 function showWifiPanel() {
     hideAllPanels();
     document.getElementById('wifi-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'wifi');
 }
@@ -382,7 +372,6 @@ function showWifiPanel() {
 function showCheckinOutPanel() {
     hideAllPanels();
     document.getElementById('checkin-out-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'checkin_out');
 }
@@ -390,7 +379,6 @@ function showCheckinOutPanel() {
 function showWelcomePanel() {
     hideAllPanels();
     document.getElementById('welcome-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Mostra il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'welcome');
 }
@@ -398,7 +386,6 @@ function showWelcomePanel() {
 function showSplashPanel() {
     hideAllPanels();
     document.getElementById('splash-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Nasconde il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu   
     sessionStorage.setItem('lastActivePanel', 'splash');
 }
@@ -426,7 +413,6 @@ function showMenuPanel() {
     }
 
     document.getElementById('menu-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Mostra il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'none'; // Nasconde il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'menu');
 }
@@ -434,7 +420,6 @@ function showMenuPanel() {
 function showContactsPanel() {
     hideAllPanels();
     document.getElementById('contacts-screen').style.display = 'block';
-    document.getElementById('go-splash-button').style.display = 'none'; // Mostra il pulsante per tornare alla splash
     document.getElementById('go-menu-button').style.display = 'block'; // Nasconde il pulsante per tornare al menu
     sessionStorage.setItem('lastActivePanel', 'contacts');
 }

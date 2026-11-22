@@ -1,3 +1,17 @@
+@font-face {
+	font-family: 'Montserrat Local';
+	src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+.body {
+  font-family: 'Montserrat Local';
+}
+
+
+
 :root {
   --text-primary-color: #fff;
   --text-secondary-color: #afa68b;
@@ -213,32 +227,44 @@ button > i {
 }
 
 .banner-img {
-  /*
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 25vh;
-    display: block;
-    background-size: cover;
-    background-position: center;
-    */
-  position: absolute;
-  left: 50%;
+  position: relative;
   width: 100%;
-  height: 50px;
-  transform: translateX(-50%); /* centra il bottone orizzontalmente */
-  /*color: var(--text-secondary-color);
-  background-color: var(--background-title-color);  */
-  border-radius: 10px;
-  font-size: 40px;
-  text-align: center;
-  line-height: 70px;
+  height: 250px; 
+  height: clamp(160px, 30vh, 320px);
+  height: clamp(160px, 30svh, 320px);
+  overflow: hidden;
 }
+
+.banner-img > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-img p {
+  position: absolute;
+  z-index: 1;
+  bottom: 40px;
+  left: 5%;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
 
 /*
 #banner-contacts {
     background-image: url('../img/banner/contacts.png');
 }
+
 
 #banner-language {
     background-image: url('../img/banner/language.png');
@@ -310,8 +336,7 @@ button > i {
 }
 
 .content {
-  position: absolute;
-  top: 80px;
+  top: 100px;
   width: 100%;
   background-color: var(--text-primary-color); /* colore di sfondo per il contenuto */
   box-sizing: border-box;
