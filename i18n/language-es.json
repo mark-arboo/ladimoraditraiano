@@ -7,6 +7,8 @@
     "home": "Inicio",
     "checkin_out": "Check-in/out",
     "wifi": "Wi-Fi",
+    "wifi_network": "Red",
+    "wifi_password": "Contraseña",
     "house_rules": "Normas de la casa",
     "house_rules_title": "<h3>¡Querido huésped, bienvenido/a!</h3><p>Para una estancia agradable, te pedimos que observes las siguientes normas:</p><br />",
     "rule_no_pets": "No se admiten mascotas en la casa.",

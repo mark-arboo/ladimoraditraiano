@@ -1,17 +1,3 @@
-@font-face {
-	font-family: 'Montserrat Local';
-	src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-
-.body {
-  font-family: 'Montserrat Local';
-}
-
-
-
 :root {
   --text-primary-color: #fff;
   --text-secondary-color: #afa68b;
@@ -20,10 +6,7 @@
   --button-font-size: 20px;
   --icon-font-size: 36px;
   --background-title-color: #cfddd9;  
-}
-
-button > i {
-    margin-right: 10px;
+  --background-container-color: #cfddd9;
 }
 
 #splash-screen {
@@ -218,14 +201,6 @@ button > i {
   }
 }
 
-.banner-welcome {    
-  width: 100%;
-  height: 10px;
-  background-color: var(--primary-color); 
-  position: absolute;
-  top: 0;
-}
-
 .banner-img {
   position: relative;
   width: 100%;
@@ -233,6 +208,7 @@ button > i {
   height: clamp(160px, 30vh, 320px);
   height: clamp(160px, 30svh, 320px);
   overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .banner-img > img {
@@ -259,81 +235,6 @@ button > i {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-
-/*
-#banner-contacts {
-    background-image: url('../img/banner/contacts.png');
-}
-
-
-#banner-language {
-    background-image: url('../img/banner/language.png');
-}
-
-#banner-restaurant {
-    background-image: url('../img/banner/restaurant.jpg');
-}
-
-#banner-review {
-    background-image: url('../img/banner/review.jpg');
-}
-
-#banner-welcome {
-  background-image: url('../img/banner/welcome.png');
-}
-
-#banner-checkin-out {
-  background-image: url('../img/banner/checkin.png');
-}
-
-#banner-recycling {
-  background-image: url('../img/banner/differenziata.png');
-}
-
-#banner-location {
-  background-image: url('../img/banner/posizione.png');
-}
-
-#banner-wifi {
-  background-image: url('../img/banner/wifi_banner.png');
-}
-
-#banner-house-rules {
-  background-image: url('../img/banner/house-rules.jpg');
-}
-
-#banner-cafe {
-  background-image: url('../img/banner/bar.png');
-}
-
-#banner-emergency {
-  background-image: url('../img/banner/emergency.jpg');
-}
-*/
-
-.banner-box {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  background-color: var(--primary-color); 
-
-}
-
-.banner-title {
-  position: absolute;
-  left: 50%;
-  bottom: -20px;
-  width: 80%;
-  height: 70px;
-  transform: translateX(-50%); /* centra il bottone orizzontalmente */
-  color: var(--text-secondary-color);
-  background-color: var(--background-title-color);  
-  border-radius: 10px;
-  font-size: 40px;
-  text-align: center;
-  line-height: 70px;
-}
 
 .content {
   top: 100px;
@@ -379,7 +280,7 @@ button > i {
   width: 100%;
   max-width: 150px;
   aspect-ratio: 1 / 1;
-  background: linear-gradient(135deg, var(--primary-color), var(--over-color));
+  background-color: var(--background-container-color);
   border-radius: 10%;
   display: flex;
   flex-direction: column;
@@ -398,12 +299,12 @@ button > i {
 
 .icon-container i {
   font-size: calc(var(--icon-font-size) * 1.2);
-  color: var(--text-primary-color);
+  color: var(--primary-color);
 }
 
 .icon-text {
   font-size: 14px;
-  color: var(--text-primary-color);
+  color: var(--primary-color);
   text-align: center;
   font-weight: 500;
   line-height: 1.2;
@@ -493,7 +394,7 @@ button > i {
   display: flex;
   align-items: center;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: var(--background-container-color);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -552,7 +453,6 @@ button > i {
   font-size: 16px;
   line-height: 1.5;
   text-align: justify;
-  padding: 15px 0;
 }
 
 .content h3 {
@@ -574,14 +474,6 @@ button > i {
   margin-bottom: 10px;
 }
 
-.content ul li  {
-  line-height: 2.0;
-}
-
-.content ul li i {
-  font-size: 24px;
-}
-
 .content img {
   display: block;
   margin: 20px auto;
@@ -589,6 +481,15 @@ button > i {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content .box {
+  background: var(--background-container-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  padding: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Fine Schemata contatti */
@@ -604,7 +505,7 @@ button > i {
   align-items: flex-start;
   margin-bottom: 25px;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: var(--background-container-color);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -656,16 +557,12 @@ button > i {
 
 
 /* Inizio Schemata WIFI */
-.wifi-list {
-  width: 100%;
-}
-
 .wifi-item {
   display: flex;
   align-items: flex-start;
   margin-bottom: 25px;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: var(--background-container-color);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -701,17 +598,6 @@ button > i {
   align-self: center;
 }
 
-.wifi-link {
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-.wifi-link:hover {
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-
 /* Fine Schemata WIFI */
 
 
@@ -727,7 +613,7 @@ button > i {
 }
 
 .faq-item {
-  background: #ffffff;
+  background: var(--background-container-color);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #e0e0e0;
@@ -735,10 +621,6 @@ button > i {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.faq-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
-}
 
 .faq-question {
   display: flex;
@@ -796,7 +678,7 @@ button > i {
 .emergency-info {
   position: relative;
   width: 100%;
-  border: 3px solid var(--primary-color);
+  background-color: var(--background-container-color);
   font-size: var(--button-font-size);
   margin-top: 20px;
   min-height: 50px;
@@ -846,7 +728,7 @@ button > i {
 }
 
 .recycling-day {
-  background: #ffffff;
+  background-color: var(--background-container-color);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -900,9 +782,6 @@ button > i {
 }
 
 /* Stile per giorni con raccolta multipla */
-.multi-waste-day {
-  background-color: #f9f9f9;
-}
 
 .waste-items-container {
   display: flex;
@@ -930,22 +809,8 @@ button > i {
   background: #4CAF50 !important;
 }
 
-.paper-icon {
-  background: #2196F3 !important;
-}
-
-.plastic-icon {
-  background: #FFC107 !important;
-}
-
-.unsorted-icon {
-  background: #757575 !important;
-}
-
 /* Colori specifici per ogni tipo di rifiuto  */
-.organic-day {
-  background-color: #f9f9f9;
-}
+
 
 .organic-day .waste-icon {
   background: #8B4513;
@@ -955,9 +820,7 @@ button > i {
   color: #ffffff;
 }
 
-.paper-day {
-  background-color: #f9f9f9;
-}
+
 
 .paper-day .waste-icon {
   background: #2196F3;
@@ -967,9 +830,6 @@ button > i {
   color: #ffffff;
 }
 
-.plastic-day {
-  background-color: #f9f9f9;
-}
 
 .plastic-day .waste-icon {
   background: #FFC107;
@@ -979,21 +839,7 @@ button > i {
   color: #ffffff;
 }
 
-.glass-day {
-  background-color: #f9f9f9;
-}
 
-.glass-day .waste-icon {
-  background: #4CAF50;
-}
-
-.glass-day .waste-icon i {
-  color: #ffffff;
-}
-
-.unsorted-day {
-  background-color: #f9f9f9;
-}
 
 .unsorted-day .waste-icon {
   background: #757575;
@@ -1002,34 +848,6 @@ button > i {
 .unsorted-day .waste-icon i {
   color: #ffffff;
 }
-
-.no-collection-day {
-  background-color: #f9f9f9;
-  opacity: 0.7;
-}
-
-.no-collection-day .waste-icon {
-  background: #e0e0e0;
-}
-
-.no-collection-day .waste-icon i {
-  color: #999999;
-}
-
-.no-collection-day .waste-type {
-  color: #999999;
-  font-style: italic;
-}
-
-
-
-
-
-
-
-
-
-
 
 /* Media query per dispositivi mobili */
 @media (max-width: 768px) {
@@ -1099,7 +917,7 @@ button > i {
 }
 
 .restaurant-card {
-  background: #ffffff;
+  background: var(--background-container-color);
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -1245,7 +1063,7 @@ button > i {
 }
 
 .review-card {
-  background: #ffffff;
+  background: var(--background-container-color);
   border: 1px solid #e7e7e7;
   border-radius: 8px;
   padding: 20px;
