@@ -1,3 +1,17 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+/*
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+*/
+
 :root {
   --text-primary-color: #fff;
   --text-secondary-color: #afa68b;
@@ -42,14 +56,11 @@
 }
 
 #splash-logo {
-  width: min(40vh, 240px);
-  height: min(40vh, 240px);
+  width: min(30vh, 70vw, 240px);
+  height: min(30vh, 70vw, 240px);
   flex: 0 0 auto;
-  padding: 38px;
-  box-sizing: border-box;
-  border-radius: 50%;
-  background-color: #fff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  -webkit-mask-image: radial-gradient(circle closest-side, #000 60%, transparent 100%);
+  mask-image: radial-gradient(circle closest-side, #000 60%, transparent 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,10 +111,17 @@
 
 .banner-menu {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 2px;
   width: 100%;
   height: 250px; 
   height: clamp(160px, 30vh, 320px);
   height: clamp(160px, 30svh, 320px);
+  box-sizing: border-box;
+  padding: 0 4% 6px;
   overflow: hidden;
   background-image: url('../img/banner/welcome.png'); 
 }
@@ -159,46 +177,28 @@
   border-color: #fff;
 }
 
-.banner-menu p:first-of-type {
-  position: absolute;
+.banner-menu > p {
+  position: relative;
   z-index: 1;
-  bottom: 40px;
-  left: 5%;
+  max-width: 100%;
+  box-sizing: border-box;
   color: #fff;
-  padding: 5px 10px;
-  font-size: 40px;
-  font-style: italic;
-  font-weight: bold;
+  padding: 2px 6px;
+  line-height: 1.2;
+  overflow-wrap: break-word;
   text-align: left;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-.banner-menu p:last-of-type {
-  position: absolute;
-  z-index: 1;
-  bottom: 10px;
-  left: 5%;
-  color: #fff;
-  padding: 5px 10px;
-  font-size: 30px;
-  text-align: left;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+.banner-menu p:first-of-type {
+  font-size: clamp(20px, 5.4vw, 40px);
+  font-style: italic;
+  font-weight: bold;
 }
 
-@media (max-width: 480px) {
-  .banner-menu p:first-of-type {
-    bottom: 34px;
-    left: 4%;
-    padding: 2px 6px;
-    font-size: 26px;
-  }
-
-  .banner-menu p:last-of-type {
-    bottom: 6px;
-    left: 4%;
-    padding: 2px 6px;
-    font-size: 17px;
-  }
+.banner-menu p:last-of-type {
+  font-size: clamp(14px, 3.5vw, 30px);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
 }
 
 .banner-img {
@@ -226,11 +226,13 @@
   z-index: 1;
   bottom: 40px;
   left: 5%;
+  right: 5%;
   color: #fff;
   padding: 5px 10px;
-  font-size: 40px;
+  font-size: clamp(20px, 5.4vw, 40px);
   font-style: italic;
   font-weight: bold;
+  overflow-wrap: break-word;
   text-align: left;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
@@ -239,8 +241,8 @@
   .banner-img > p {
     bottom: 34px;
     left: 4%;
+    right: 4%;
     padding: 2px 6px;
-    font-size: 26px;
   }
 }
 
@@ -368,8 +370,12 @@
 }
 
 #splash-welcome #splash-name {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
   color: var(--text-primary-color);
-  font-size: clamp(16px, 5vw, 28px);
+  font-size: clamp(20px, 6vw, 36px);
   white-space: nowrap;
   margin: 0 0 8px;
   letter-spacing: 1px;
@@ -378,19 +384,8 @@
 }
 
 #splash-screen #enter-button {
-  position: relative;
-  left: auto;
-  top: auto;
-  transform: none;
+  top: 80%;
 }
-
-#splash-screen #enter-button:active {
-  transform: scale(0.98);
-}
-
-
-
-
 
 
 /* Inizio Schemata contatti */
