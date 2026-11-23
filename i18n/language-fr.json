@@ -45,6 +45,8 @@
     "emergenza_sanitaria": "Urgence Sanitaire",
     "guardia_medica_di_terracina": "Garde Médicale de Terracina",
     "location": "Emplacement",
+    "location_address": "Adresse",
+    "open_google_maps": "Ouvrir dans Google Maps",
     "location_text": "<h3>Via Traiano 19, scala B interno 4, Terracina Italia</h3>",
     "reviews": "Avis",
     "recycling": "Collecte des déchets",
