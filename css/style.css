@@ -235,6 +235,15 @@
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
+@media (max-width: 480px) {
+  .banner-img > p {
+    bottom: 34px;
+    left: 4%;
+    padding: 2px 6px;
+    font-size: 26px;
+  }
+}
+
 
 .content {
   top: 100px;

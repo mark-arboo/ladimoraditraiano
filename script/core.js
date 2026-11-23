@@ -413,6 +413,7 @@ function hideAllPanels() {
     document.querySelectorAll('.panel').forEach(panel => {
         panel.style.display = 'none';
     });
+    window.scrollTo(0, 0);
 }   
 
 
