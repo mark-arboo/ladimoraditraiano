@@ -136,7 +136,8 @@ body {
   display: block;
 }
 
-.banner-menu::after {
+.banner-menu::after,
+.banner-img::after {
   content: '';
   position: absolute;
   inset: 0;
