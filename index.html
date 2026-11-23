@@ -285,8 +285,12 @@
             </div>
             <div class="wifi-text">
                 <div class="contact-card-label" data-key="wifi_network">Rete</div>
-                <div class="contact-card-value">LaDimoraDiTraiano</div>
+                <div class="contact-card-value" id="wifi-network">LaDimoraDiTraiano</div>
             </div>
+            <button type="button" class="copy-button" aria-describedby="wifi-network">
+              <i class="fa fa-clone" aria-hidden="true"></i>
+              <span data-key="copy_wifi_network">Copy network name</span>
+            </button>
         </div> 
         <div class="wifi-item">
             <div class="wifi-icon">
@@ -294,9 +298,14 @@
             </div>
             <div class="wifi-text">
                 <div class="contact-card-label" data-key="wifi_password">Password</div>
-                <div class="contact-card-value">LaDimoraDiTraiano2026</div>
+                <div class="contact-card-value" id="wifi-password">LaDimoraDiTraiano2026</div>
             </div>
+            <button type="button" class="copy-button" aria-describedby="wifi-password">
+              <i class="fa fa-clone" aria-hidden="true"></i>
+              <span data-key="copy_wifi_password">Copy password</span>
+            </button>
         </div>      
+        <p class="copy-status" role="status" aria-live="polite"></p>
         
         <div style="text-align: center">
           <img src="./img/wifi_access.png" alt="Wi-Fi Image" class="wifi-image">
@@ -408,9 +417,13 @@
             </div>
             <div class="contact-card-text">
               <div class="contact-card-label" data-key="phone">Telefono</div>
-              <div class="contact-card-value">+39 320 68 69 723</div>
+              <div class="contact-card-value" id="contact-phone">+39 320 68 69 723</div>
             </div>
           </a>
+          <button type="button" class="copy-button" aria-describedby="contact-phone">
+            <i class="fa fa-clone" aria-hidden="true"></i>
+            <span data-key="copy_contact">Copy contact</span>
+          </button>
         </div>
 
         <div class="contact-card">
@@ -420,10 +433,15 @@
             </div>
             <div class="contact-card-text">
               <div class="contact-card-label" data-key="email">Email</div>
-              <div class="contact-card-value">ladimoraditraiano@gmail.com</div>
+              <div class="contact-card-value" id="contact-email">ladimoraditraiano@gmail.com</div>
             </div>
           </a>
+          <button type="button" class="copy-button" aria-describedby="contact-email">
+            <i class="fa fa-clone" aria-hidden="true"></i>
+            <span data-key="copy_contact">Copy contact</span>
+          </button>
         </div>
+        <p class="copy-status" role="status" aria-live="polite"></p>
       </div>      
     </div>
 
